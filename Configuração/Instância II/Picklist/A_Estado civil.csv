@@ -1,0 +1,5 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR,en_DEBUG
+ecMaritalStatus,5852,-1.0,-1.0,-1.0,ACTIVE,P,-1,Single,Viúvo(a),Single
+ecMaritalStatus,5853,-1.0,-1.0,-1.0,ACTIVE,O,-1,Married,Solteiro(a),Married
+ecMaritalStatus,5854,-1.0,-1.0,-1.0,ACTIVE,B,-1,Widow,Casado(a),Widowed
+ecMaritalStatus,5855,-1.0,-1.0,-1.0,ACTIVE,D,-1,Divorced,Divorciado(a),Divorced

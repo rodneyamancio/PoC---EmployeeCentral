@@ -1,0 +1,116 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ language,297,0,0,0,DELETED,  null  ,-1,,  Africano   
+ language,298,0,0,0,DELETED,  null  ,-1,,  Linguagem Americana de Sinais   
+ language,299,0,0,0,DELETED,  null  ,-1,,  AmÃ¡rica   
+ language,300,0,0,0,DELETED,  null  ,-1,,  Ã?rabe   
+ language,301,0,0,0,DELETED,  bs_ID  ,-1,,  Bahasa   
+ language,302,0,0,0,DELETED,  bs_BS  ,-1,,  Bahasa (Malay)   
+ language,303,0,0,0,DELETED,  null  ,-1,,  BirmanÃªs   
+ language,304,0,0,0,DELETED,  zh_TW  ,-1,,  Chin??s (Canton??s)   
+ language,305,0,0,0,ACTIVE,  zh_CN  ,-1,,  Chin�s   
+ language,306,0,0,0,DELETED,  bg_BG  ,-1,,  Bulgarian   
+ language,307,0,0,0,DELETED,  null  ,-1,,  ChinÃªs (Xangai)   
+ language,308,0,0,0,ACTIVE,  cz_CZ  ,-1,,  Tcheco   
+ language,309,0,0,0,ACTIVE,  da_DK  ,-1,,  Dinamarqu�s   
+ language,310,0,0,0,ACTIVE,  nl_NL  ,-1,,  Holand�s   
+ language,311,0,0,0,ACTIVE,  en_US  ,-1,,  Ingl�s   
+ language,312,0,0,0,DELETED,  null  ,-1,,  PÃ¡rsi   
+ language,313,0,0,0,DELETED,  null  ,-1,,  FinlandÃªs   
+ language,314,0,0,0,DELETED,  null  ,-1,,  NeerlandÃªs   
+ language,315,0,0,0,ACTIVE,  fr_FR  ,-1,,  Franc�s   
+ language,316,0,0,0,ACTIVE,  de_DE  ,-1,,  Alem�o   
+ language,317,0,0,0,ACTIVE,  el_GR  ,-1,,  Grego   
+ language,318,0,0,0,DELETED,  null  ,-1,,  Hebraico   
+ language,319,0,0,0,ACTIVE,  hi_IN  ,-1,,  Hindi   
+ language,320,0,0,0,ACTIVE,  hr_HR  ,-1,,  H�ngaro   
+ language,321,0,0,0,DELETED,  de_CH  ,-1,,  Swiss High German   
+ language,322,0,0,0,ACTIVE,  fr_CA  ,-1,,  Franc�s   
+ language,323,0,0,0,DELETED,  sk_SK  ,-1,,  Slovakian   
+ language,324,0,0,0,DELETED,  nb_NO  ,-1,,  Norwegian bokm?l   
+ language,325,0,0,0,ACTIVE,  it_IT  ,-1,,  Italiano   
+ language,326,0,0,0,ACTIVE,  ja_JP  ,-1,,  Japon�s   
+ language,327,0,0,0,DELETED,  null  ,-1,,  Kiswahili   
+ language,328,0,0,0,ACTIVE,  ko_KR  ,-1,,  Coreano   
+ language,329,0,0,0,DELETED,  null  ,-1,,  Laociano   
+ language,330,0,0,0,DELETED,  null  ,-1,,  Latim   
+ language,331,0,0,0,DELETED,  null  ,-1,,  LetÃ£o   
+ language,332,0,0,0,DELETED,  null  ,-1,,  Lituano   
+ language,333,0,0,0,DELETED,  null  ,-1,,  Malaio   
+ language,334,0,0,0,ACTIVE,  no_NO  ,-1,,  Noruegu�s   
+ language,335,0,0,0,ACTIVE,  pl_PL  ,-1,,  Polon�s   
+ language,336,0,0,0,ACTIVE,  pt_BR  ,-1,,  Portugu�s   
+ language,337,0,0,0,ACTIVE,  ro_RO  ,-1,,  Romeno   
+ language,338,0,0,0,ACTIVE,  ru_RU  ,-1,,  Russo   
+ language,339,0,0,0,DELETED,  null  ,-1,,  Servo-Croata   
+ language,340,0,0,0,ACTIVE,  es_ES  ,-1,,  Espanhol   
+ language,341,0,0,0,ACTIVE,  sl_SL  ,-1,,  Slovenian   
+ language,342,0,0,0,ACTIVE,  sv_SE  ,-1,,  Sueco   
+ language,343,0,0,0,DELETED,  tl_PH  ,-1,,  Tagalo (Filipinas)   
+ language,344,0,0,0,DELETED,  null  ,-1,,  Tamil   
+ language,345,0,0,0,DELETED,  null  ,-1,,  TÃ¢mil (Ã?ndia)   
+ language,346,0,0,0,DELETED,  null  ,-1,,  Telugu   
+ language,347,0,0,0,ACTIVE,  th_TH  ,-1,,  Tailand�s   
+ language,348,0,0,0,ACTIVE,  tr_TR  ,-1,,  Turco   
+ language,349,0,0,0,DELETED,  null  ,-1,,  Twi (Gana)   
+ language,350,0,0,0,ACTIVE,  uk_UA  ,-1,,  Ucraniano   
+ language,351,0,0,0,DELETED,  null  ,-1,,  Urdu (PaquistÃ£o)   
+ language,352,0,0,0,ACTIVE,  vi_VN  ,-1,,  Vietnamita   
+ language,353,0,0,0,DELETED,  null  ,-1,,  GalÃªs   
+ language,1192,0,0,0,DELETED,  null  ,-1,,  Africano   
+ language,1193,0,0,0,DELETED,  null  ,-1,,  Linguagem Americana de Sinais   
+ language,1194,0,0,0,DELETED,  null  ,-1,,  AmÃƒ?Ã‚Â¡rica   
+ language,1195,0,0,0,DELETED,  null  ,-1,,  Ãƒ?Ã‚Â?rabe   
+ language,1196,0,0,0,DELETED,  null  ,-1,,  IndonÃƒ?Ã‚Â©sio   
+ language,1197,0,0,0,DELETED,  null  ,-1,,  Bengali   
+ language,1198,0,0,0,DELETED,  null  ,-1,,  BirmanÃƒ?Ã‚Âªs   
+ language,1199,0,0,0,DELETED,  null  ,-1,,  ChinÃƒ?Ã‚Âªs (CantonÃƒ?Ã‚Âªs)   
+ language,1200,0,0,0,DELETED,  null  ,-1,,  ChinÃƒ?Ã‚Âªs (Mandarim)   
+ language,1201,0,0,0,DELETED,  null  ,-1,,  ChinÃƒ?Ã‚Âªs (outros)   
+ language,1202,0,0,0,DELETED,  null  ,-1,,  ChinÃƒ?Ã‚Âªs (Xangai)   
+ language,1203,0,0,0,DELETED,  null  ,-1,,  Tcheco   
+ language,1204,0,0,0,DELETED,  null  ,-1,,  DinamarquÃƒ?Ã‚Âªs   
+ language,1205,0,0,0,DELETED,  null  ,-1,,  HolandÃƒ?Ã‚Âªs   
+ language,1206,0,0,0,DELETED,  en_GB  ,-1,,  Ingl???????s   
+ language,1207,0,0,0,DELETED,  null  ,-1,,  PÃƒ?Ã‚Â¡rsi   
+ language,1208,0,0,0,DELETED,  null  ,-1,,  FinlandÃƒ?Ã‚Âªs   
+ language,1209,0,0,0,DELETED,  null  ,-1,,  NeerlandÃƒ?Ã‚Âªs   
+ language,1210,0,0,0,DELETED,  null  ,-1,,  FrancÃƒ?Ã‚Âªs   
+ language,1211,0,0,0,DELETED,  null  ,-1,,  AlemÃƒ?Ã‚Â£o   
+ language,1212,0,0,0,DELETED,  null  ,-1,,  Grego   
+ language,1213,0,0,0,DELETED,  null  ,-1,,  HebrÃƒ?Ã‚Â¡ico   
+ language,1214,0,0,0,DELETED,  null  ,-1,,  Hindi   
+ language,1215,0,0,0,DELETED,  null  ,-1,,  HÃƒ?Ã‚Âºngaro   
+ language,1216,0,0,0,DELETED,  null  ,-1,,  IndÃƒ?Ã‚Â­gena   
+ language,1217,0,0,0,DELETED,  null  ,-1,,  Indiano (Hindi)   
+ language,1218,0,0,0,DELETED,  null  ,-1,,  Indiano (CanarÃƒ?Ã‚Â¡)   
+ language,1219,0,0,0,DELETED,  null  ,-1,,  Indiano (Concani)   
+ language,1220,0,0,0,DELETED,  null  ,-1,,  Italiano   
+ language,1221,0,0,0,DELETED,  null  ,-1,,  JaponÃƒ?Ã‚Âªs   
+ language,1222,0,0,0,DELETED,  null  ,-1,,  Kiswahili   
+ language,1223,0,0,0,DELETED,  null  ,-1,,  Coreano   
+ language,1224,0,0,0,DELETED,  null  ,-1,,  Laociano   
+ language,1225,0,0,0,DELETED,  null  ,-1,,  Latim   
+ language,1226,0,0,0,DELETED,  null  ,-1,,  LetÃƒ?Ã‚Â£o   
+ language,1227,0,0,0,DELETED,  null  ,-1,,  Lituano   
+ language,1228,0,0,0,DELETED,  null  ,-1,,  Malaio   
+ language,1229,0,0,0,DELETED,  null  ,-1,,  NorueguÃƒ?Ã‚Âªs   
+ language,1230,0,0,0,DELETED,  null  ,-1,,  PolonÃƒ?Ã‚Âªs   
+ language,1231,0,0,0,DELETED,  pt_PT  ,-1,,  Portugu???????s   
+ language,1232,0,0,0,DELETED,  null  ,-1,,  Romeno   
+ language,1233,0,0,0,DELETED,  null  ,-1,,  Russo   
+ language,1234,0,0,0,DELETED,  null  ,-1,,  Servo-Croata   
+ language,1235,0,0,0,DELETED,  null  ,-1,,  Espanhol   
+ language,1236,0,0,0,DELETED,  null  ,-1,,  Swahili   
+ language,1237,0,0,0,DELETED,  null  ,-1,,  Sueco   
+ language,1238,0,0,0,DELETED,  null  ,-1,,  Tagalo (Filipinas)   
+ language,1239,0,0,0,DELETED,  null  ,-1,,  TÃƒ?Ã‚Â¢mil (Sri Lanka)   
+ language,1240,0,0,0,DELETED,  null  ,-1,,  TÃƒ?Ã‚Â¢mil (Ãƒ?Ã‚Â?ndia)   
+ language,1241,0,0,0,DELETED,  null  ,-1,,  Telugu   
+ language,1242,0,0,0,DELETED,  null  ,-1,,  TailandÃƒ?Ã‚Âªs   
+ language,1243,0,0,0,DELETED,  null  ,-1,,  Turco   
+ language,1244,0,0,0,DELETED,  null  ,-1,,  Twi (Gana)   
+ language,1245,0,0,0,DELETED,  null  ,-1,,  Ucraniano   
+ language,1246,0,0,0,DELETED,  null  ,-1,,  Urdu (PaquistÃƒ?Ã‚Â£o)   
+ language,1247,0,0,0,DELETED,  null  ,-1,,  Vietnamita   
+ language,1248,0,0,0,DELETED,  null  ,-1,,  GalÃƒ?Ã‚Âªs   
+ language,1513,0,0,0,DELETED,  null  ,-1,,  Punjabi   

@@ -1,0 +1,12 @@
+personInfo.person-id-external,phone-type,phone-number,extension,isPrimary,operation
+ID pessoal externa,Tipo do telefone,Número de telefone,Ramal,É primário,Operação
+pavelino,Comercial,999-9999,123,Y,
+pcunha,Comercial 1,999-9999,123,Y,
+gantonio,Celular,999-9999,123,Y,
+aaragao,Celular 1,999-9999,123,Y,
+jscarton,Fax,999-9999,123,Y,
+cestal,Outros ,999-9999,123,Y,
+lferreira,Residencial,999-9999,123,Y,
+fdelgado,Outros ,999-9999,123,Y,
+lbenicio,Residencial,999-9999,123,Y,
+rmenezes,Outros ,999-9999,123,Y,

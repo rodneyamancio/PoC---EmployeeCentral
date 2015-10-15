@@ -1,0 +1,131 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR,en_DEBUG
+major,99,0,0,0,ACTIVE,null,-1,Accounting,Contabilidade,Accounting
+major,100,0,0,0,ACTIVE,null,-1,Anthropology,Antropologia,Anthropology
+major,101,0,0,0,ACTIVE,null,-1,Architecture,Arquitetura,Architecture
+major,102,0,0,0,ACTIVE,null,-1,Arts,Artes,Arts
+major,103,0,0,0,ACTIVE,null,-1,Biological Science,Ciência Biológica,Biological Science
+major,104,0,0,0,ACTIVE,null,-1,Biology,Biologia,Biology
+major,105,0,0,0,ACTIVE,null,-1,Business,Negócios,Business
+major,106,0,0,0,ACTIVE,null,-1,Chemical Engineering,Engenharia química,Chemical Engineering
+major,107,0,0,0,ACTIVE,null,-1,Chemistry,Química,Chemistry
+major,108,0,0,0,ACTIVE,null,-1,Civil Engineering,Engenharia Civil,Civil Engineering
+major,109,0,0,0,ACTIVE,null,-1,Communication,Comunicação,Communication
+major,110,0,0,0,ACTIVE,null,-1,Comparative Literature,Literatura Comparativa,Comparative Literature
+major,111,0,0,0,ACTIVE,null,-1,Computer Science,Ciência da computação,Computer Science
+major,112,0,0,0,ACTIVE,null,-1,Criminal Justice,Justiça Criminal,Criminal Justice
+major,113,0,0,0,ACTIVE,null,-1,Design,Projeto,Design
+major,114,0,0,0,ACTIVE,null,-1,Drafting,Redação,Drafting
+major,115,0,0,0,ACTIVE,null,-1,Economics,Economia,Economics
+major,116,0,0,0,ACTIVE,null,-1,Education,Educação,Education
+major,117,0,0,0,ACTIVE,null,-1,Electrical Engineering,Engenharia elétrica,Electrical Engineering
+major,118,0,0,0,ACTIVE,null,-1,Electronics,Eletrônica,Electronics
+major,119,0,0,0,ACTIVE,null,-1,Engineering General,Engenharia,Engineering General
+major,120,0,0,0,ACTIVE,null,-1,Engineering Management,Gestão em engenharia,Engineering Management
+major,121,0,0,0,ACTIVE,null,-1,English,Inglês,English
+major,122,0,0,0,ACTIVE,null,-1,Environmental Engineering,Engenharia Ambiental,Environmental Engineering
+major,123,0,0,0,ACTIVE,null,-1,Environmental Science,Ciência ambiental,Environmental Science
+major,124,0,0,0,ACTIVE,null,-1,Film,Filme,Film
+major,125,0,0,0,ACTIVE,null,-1,Finance,Finanças,Finance
+major,126,0,0,0,ACTIVE,null,-1,Fine Arts,Belas-Artes,Fine Arts
+major,127,0,0,0,ACTIVE,null,-1,Foreign Language,Idioma Estrangeiro,Foreign Language
+major,128,0,0,0,ACTIVE,null,-1,Forestry,Silvicultura,Forestry
+major,129,0,0,0,ACTIVE,null,-1,General Studies,Estudos Gerais,General Studies
+major,130,0,0,0,ACTIVE,null,-1,Geography,Geografia,Geography
+major,131,0,0,0,ACTIVE,null,-1,Geology,Geologia,Geology
+major,132,0,0,0,ACTIVE,null,-1,Government,Governo,Government
+major,133,0,0,0,ACTIVE,null,-1,Healthcare,Assistência médica,Healthcare
+major,134,0,0,0,ACTIVE,null,-1,History,História,History
+major,135,0,0,0,ACTIVE,null,-1,Hospitality Management,Gestão hospitalar,Hospitality Management
+major,136,0,0,0,ACTIVE,null,-1,Human Resources,Recursos humanos,Human Resources
+major,137,0,0,0,ACTIVE,null,-1,Information Systems,Sistemas de informação ,Information Systems
+major,138,0,0,0,ACTIVE,null,-1,Law,Lei,Law
+major,139,0,0,0,ACTIVE,null,-1,Liberal Arts,Humanidades,Liberal Arts
+major,140,0,0,0,ACTIVE,null,-1,Linguistics,Linguistica,Linguistics
+major,141,0,0,0,ACTIVE,null,-1,Literature,Literatura,Literature
+major,142,0,0,0,ACTIVE,null,-1,Management,Gestão,Management
+major,143,0,0,0,ACTIVE,null,-1,Marketing,Marketing,Marketing
+major,144,0,0,0,ACTIVE,null,-1,Mathematics,Matemática,Mathematics
+major,145,0,0,0,ACTIVE,null,-1,Mechanical Engineering,Engenharia mecância,Mechanical Engineering
+major,146,0,0,0,ACTIVE,null,-1,Media,Mídia,Media
+major,147,0,0,0,ACTIVE,null,-1,Music,Música,Music
+major,148,0,0,0,ACTIVE,null,-1,Nursing,Enfermagem,Nursing
+major,149,0,0,0,ACTIVE,null,-1,Organization Development,Desenvolvimento Organizacional,Organization Development
+major,150,0,0,0,ACTIVE,null,-1,Other,De outros,Other
+major,151,0,0,0,ACTIVE,null,-1,Other Technology,Outras Tecnologias,Other Technology
+major,152,0,0,0,ACTIVE,null,-1,Pharmacy,Farmácia,Pharmacy
+major,153,0,0,0,ACTIVE,null,-1,Philosophy,Filosofia,Philosophy
+major,154,0,0,0,ACTIVE,null,-1,Physics,Física,Physics
+major,155,0,0,0,ACTIVE,null,-1,Political Science,Ciências política,Political Science
+major,156,0,0,0,ACTIVE,null,-1,Psychology,Psicologia,Psychology
+major,157,0,0,0,ACTIVE,null,-1,Public Relations,Relações públicas,Public Relations
+major,158,0,0,0,ACTIVE,null,-1,Religion,Religião,Religion
+major,159,0,0,0,ACTIVE,null,-1,Science,Ciência,Science
+major,160,0,0,0,ACTIVE,null,-1,Sociology,Sociologia,Sociology
+major,161,0,0,0,ACTIVE,null,-1,Statistics,Estatística,Statistics
+major,162,0,0,0,ACTIVE,null,-1,Theatre,Teatro,Theatre
+major,163,0,0,0,ACTIVE,null,-1,Visual Arts,Artes visuais,Visual Arts
+major,963,0,0,0,DELETED,null,-1,Accounting,Contabilidade,Accounting
+major,964,0,0,0,DELETED,null,-1,Anthropology,Antropologia,Anthropology
+major,965,0,0,0,DELETED,null,-1,Architecture,Arquitetura,Architecture
+major,966,0,0,0,DELETED,null,-1,Arts,Artes,Arts
+major,967,0,0,0,DELETED,null,-1,Biological Science,Ciência biológica,Biological Science
+major,968,0,0,0,DELETED,null,-1,Biology,Biologia,Biology
+major,969,0,0,0,DELETED,null,-1,Business,O negÃ³cio,Business
+major,970,0,0,0,DELETED,null,-1,Chemical Engineering,Engenharia QuÃ­mica,Chemical Engineering
+major,971,0,0,0,DELETED,null,-1,Chemistry,QuÃ­mica,Chemistry
+major,972,0,0,0,DELETED,null,-1,Civil Engineering,Engenharia Civil,Civil Engineering
+major,973,0,0,0,DELETED,null,-1,Communication,ComunicaÃ§Ã£o,Communication
+major,974,0,0,0,DELETED,null,-1,Comparative Literature,Literatura Comparativa,Comparative Literature
+major,975,0,0,0,DELETED,null,-1,Computer Science,CiÃªncia da ComputaÃ§Ã£o,Computer Science
+major,976,0,0,0,DELETED,null,-1,Criminal Justice,JustiÃ§a Criminal,Criminal Justice
+major,977,0,0,0,DELETED,null,-1,Design,Projeto,Design
+major,978,0,0,0,DELETED,null,-1,Drafting,RedaÃ§Ã£o,Drafting
+major,979,0,0,0,DELETED,null,-1,Economics,Economia,Economics
+major,980,0,0,0,DELETED,null,-1,Education,EducaÃ§Ã£o,Education
+major,981,0,0,0,DELETED,null,-1,Electrical Engineering,Engenharia elÃ©trica,Electrical Engineering
+major,982,0,0,0,DELETED,null,-1,Electronics,EletrÃ´nica,Electronics
+major,983,0,0,0,DELETED,null,-1,Engineering General,Engenharia,Engineering General
+major,984,0,0,0,DELETED,null,-1,Engineering Management,GestÃƒÆ’?Ãƒâ€šÃ‚Â£o em Engenharia,Engineering Management
+major,985,0,0,0,DELETED,null,-1,English,InglÃªs,English
+major,986,0,0,0,DELETED,null,-1,Environmental Engineering,Engenharia Ambiental,Environmental Engineering
+major,987,0,0,0,DELETED,null,-1,Environmental Science,CiÃªncia ambiental,Environmental Science
+major,988,0,0,0,DELETED,null,-1,Film,Filme,Film
+major,989,0,0,0,DELETED,null,-1,Finance,FinanÃ§as,Finance
+major,990,0,0,0,DELETED,null,-1,Fine Arts,Belas-Artes,Fine Arts
+major,991,0,0,0,DELETED,null,-1,Foreign Language,Idioma Estrangeiro,Foreign Language
+major,992,0,0,0,DELETED,null,-1,Forestry,Silvicultura,Forestry
+major,993,0,0,0,DELETED,null,-1,General Studies,Estudos Gerais,General Studies
+major,994,0,0,0,DELETED,null,-1,Geography,Geografia,Geography
+major,995,0,0,0,DELETED,null,-1,Geology,Geologia,Geology
+major,996,0,0,0,DELETED,null,-1,Government,Governo,Government
+major,997,0,0,0,DELETED,null,-1,Healthcare,AssistÃªncia mÃ©dica,Healthcare
+major,998,0,0,0,DELETED,null,-1,History,HistÃ³ria,History
+major,999,0,0,0,DELETED,null,-1,Hospitality Management,GestÃƒÆ’?Ãƒâ€šÃ‚Â£o Hospitalar,Hospitality Management
+major,1000,0,0,0,DELETED,null,-1,Human Resources,Recursos humanos,Human Resources
+major,1001,0,0,0,DELETED,null,-1,Information Systems,Sistemas de InformaÃƒÆ’?Ãƒâ€šÃ‚Â§ÃƒÆ’?Ãƒâ€šÃ‚Â£o,Information Systems
+major,1002,0,0,0,DELETED,null,-1,Law,Lei,Law
+major,1003,0,0,0,DELETED,null,-1,Liberal Arts,Humanidades,Liberal Arts
+major,1004,0,0,0,DELETED,null,-1,Linguistics,LinguÃ­stica,Linguistics
+major,1005,0,0,0,DELETED,null,-1,Literature,Literatura,Literature
+major,1006,0,0,0,DELETED,null,-1,Management,GestÃ£o,Management
+major,1007,0,0,0,DELETED,null,-1,Marketing,Marketing,Marketing
+major,1008,0,0,0,DELETED,null,-1,Mathematics,MatemÃ¡tica,Mathematics
+major,1009,0,0,0,DELETED,null,-1,Mechanical Engineering,Engenharia MecÃ¢nica,Mechanical Engineering
+major,1010,0,0,0,DELETED,null,-1,Media,MÃ­dia,Media
+major,1011,0,0,0,DELETED,null,-1,Music,MÃºsica,Music
+major,1012,0,0,0,DELETED,null,-1,Nursing,Enfermagem,Nursing
+major,1013,0,0,0,DELETED,null,-1,Organization Development,Desenvolvimento Organizacional,Organization Development
+major,1014,0,0,0,DELETED,null,-1,Other,De outros,Other
+major,1015,0,0,0,DELETED,null,-1,Other Technology,Outras Tecnologias,Other Technology
+major,1016,0,0,0,DELETED,null,-1,Pharmacy,FarmÃƒÆ’?Ãƒâ€šÃ‚Â¡cia,Pharmacy
+major,1017,0,0,0,DELETED,null,-1,Philosophy,Filosofia,Philosophy
+major,1018,0,0,0,DELETED,null,-1,Physics,FÃ­sica,Physics
+major,1019,0,0,0,DELETED,null,-1,Political Science,CiÃªncia PolÃ­tica,Political Science
+major,1020,0,0,0,DELETED,null,-1,Psychology,Psicologia,Psychology
+major,1021,0,0,0,DELETED,null,-1,Public Relations,RelaÃ§Ãµes pÃºblicas,Public Relations
+major,1022,0,0,0,DELETED,null,-1,Religion,ReligiÃ£o,Religion
+major,1023,0,0,0,DELETED,null,-1,Science,CiÃªncia,Science
+major,1024,0,0,0,DELETED,null,-1,Sociology,Sociologia,Sociology
+major,1025,0,0,0,DELETED,null,-1,Statistics,EstatÃ­sticas,Statistics
+major,1026,0,0,0,DELETED,null,-1,Theatre,Teatro,Theatre
+major,1027,0,0,0,DELETED,null,-1,Visual Arts,Artes visuais,Visual Arts

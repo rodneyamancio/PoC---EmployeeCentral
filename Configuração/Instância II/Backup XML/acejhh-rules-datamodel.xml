@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!-- 
+	******************************************************************************
+	Event Reason Rules Derivation
+	Sept 2011 Build (11.09) updated 2011-Sept-24
+	
+ 	This file contains the rules that are used to derive the event and event reason when enry is made through the MSS UI.
+ 	
+ 	The following event reasons are supported by this rule file
+ 	
+POS_XFR		Position Transfer
+POS_RECLASS	Position Reclassification
+PAYXFR		Transfer
+DATACOST	Cost Center Change
+DEMONPAY	Demotion - No Pay Change
+DEMORPAY	Demotion - Pay Change
+PROPNP		Promotion - No Pay Change
+PROPWP		Promotion - Pay Change
+TRANDEPTP	Transfer - Dept Change w/ Pay
+TRANDIVP	Transfer - Div Change w/ Pay
+TRANBUP		Transfer - BU Change w/ Pay
+TRANLOCP	Transfer - Loc Change w/ Pay
+PAYBEN		Benefits Adjustment
+PAYMER		Merit
+JOBTITLE	Data Change / Job Title Update
+JOBLATRL	Job Change - Lateral
+TRANDEPT	Transfer - Department Change
+TRANDIV		Transfer - Division Change
+TRANBU		Transfer - Bus. Unit Change
+TRANLOC		Transfer - Location Change
+PAYCARALL	Change Car Allowance
+PAYTGTCM	Change Quota/Target Comm
+PAYBON		Change Bonus Amount
+SPOT		Add Bonus; Type = SPOT
+JOBHOURS	Standard Hours Changed
+JOBSHIFT	Shift Change
+JOBEMPCL	Change of Employee Class
+JOBFTPT		Full-time to Part-Time
+JOBPTFT		Part-time to Full-Time
+JOBSUPRV	Supervisor Change Only
+DATACHG		Data Change
+!--> 	
+
+<ruleset version="1.0">
+	<!-- Position transfer and reclassification rules are being set to trigger for the Wilson Gale group so typical promotion/transfer
+    type transactions can still be triggered using the usual demo population.  
+    Also there needs to be some defensive logic to make sure position field is not blank for position events. 
+    Wilson Gale group will be identified with cost center = 63000
+!-->
+	<rule id="rule-PT1">
+		<trueoutput>POS_XFR</trueoutput>
+		<conditions> 
+			<and>
+				<equal id="jobInfo.pay-grade" inverse="true"/>
+				<equal id="jobInfo.position" value="" inverse="true"/>
+				<equal id="jobInfo.cost-center" value="63000" />
+			</and>				
+		</conditions> 
+	</rule>
+	<rule id="rule-PT2">
+		<trueoutput>POS_XFR</trueoutput>
+		<conditions> 
+			<and>
+				<equal id="jobInfo.job-code" inverse="true"/>
+				<equal id="jobInfo.position" value="" inverse="true"/>
+				<equal id="jobInfo.cost-center" value="63000" />
+			</and>				
+		</conditions> 
+	</rule>
+	<rule id="rule-PR1">
+		<trueoutput>POS_RECLASS</trueoutput>
+		<conditions> 
+			<and>    
+				<equal id="jobInfo.business-unit" inverse="true"/>
+				<equal id="jobInfo.position" value="" inverse="true"/>
+				<equal id="jobInfo.cost-center" value="63000" />
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-PR2">
+		<trueoutput>POS_RECLASS</trueoutput>
+		<conditions> 
+			<and>    
+				<equal id="jobInfo.division" inverse="true"/>
+				<equal id="jobInfo.position" value="" inverse="true"/>
+				<equal id="jobInfo.cost-center" value="63000" />
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-PR3">
+		<trueoutput>POS_RECLASS</trueoutput>
+		<conditions> 
+			<and>    
+				<equal id="jobInfo.position" value="" inverse="true"/>
+				<equal id="jobInfo.cost-center" value="63000" />
+				<equal id="jobInfo.department" inverse="true"/>
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-1">
+		<trueoutput>PAYXFR</trueoutput>
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.company" inverse="true"/>
+			</and> 
+		</conditions> 
+	</rule>
+	
+	<rule id="rule-4"> 
+		<trueoutput>DEMORPAY</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<lesser id="jobInfo.pay-grade.paygradeLevel"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-3"> 
+		<trueoutput>DEMONPAY</trueoutput> 
+		<conditions> 
+			<and>	
+<!--			<equal id="payComponentGroup.AnnualizedSalary"/> -->
+				<lesser id="jobInfo.pay-grade.paygradeLevel"/> 
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-6"> 
+		<trueoutput>PROPWP</trueoutput> 
+		<conditions> 
+			<and>	
+				<greater id="payComponentGroup.AnnualizedSalary" />
+				<greater id="jobInfo.pay-grade.paygradeLevel"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-5"> 
+		<trueoutput>PROPNP</trueoutput> 
+		<conditions> 
+			<and>	
+<!--			<equal id="payComponentGroup.AnnualizedSalary"/> -->
+				<greater id="jobInfo.pay-grade.paygradeLevel"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-28"> 
+		<trueoutput>TRANBUP</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<equal id="jobInfo.business-unit" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-29"> 
+		<trueoutput>TRANDIVP</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<equal id="jobInfo.division" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-30"> 
+		<trueoutput>TRANDEPTP</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<equal id="jobInfo.department" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-31"> 
+		<trueoutput>TRANLOCP</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<equal id="jobInfo.location" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-24"> 
+		<trueoutput>TRANBU</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.business-unit" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-25"> 
+		<trueoutput>TRANDIV</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.division" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-26"> 
+		<trueoutput>TRANDEPT</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.department" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-27"> 
+		<trueoutput>TRANLOC</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.location" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-9"> 
+		<trueoutput>JOBTITLE</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.job-title" inverse = "true"/> 
+				<equal id="jobInfo.job-code"/> 
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-10"> 
+		<trueoutput>JOBLATRL</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.job-code" inverse = "true"/> 
+				<equal id="jobInfo.pay-grade.paygradeLevel"/> 
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-32"> 
+		<trueoutput>POSCHGPAY</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+				<equal id="jobInfo.position" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-32"> 
+		<trueoutput>POSCHG</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.position" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-2">
+		<trueoutput>DATACOST</trueoutput> 
+		<conditions>
+			<and> 
+				<equal   id="jobInfo.cost-center" inverse="true"/> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-23"> 
+		<trueoutput>SPOT</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentNonRecurring.pay-component-code" value="SPOT" compareToNew="true"/>
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-15"> 
+		<trueoutput>PAYBON</trueoutput> 
+		<conditions> 
+			<or>
+				<equal id="payComponentGroup.TEO" inverse = "true"/>		  
+				<equal id="payComponentGroup.TARG" inverse = "true"/>
+			</or> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-14"> 
+	<trueoutput>PAYTGTCM</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.TARG" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-8"> 
+		<trueoutput>PAYMER</trueoutput> 
+		<conditions> 
+			<and>
+				<equal id="payComponentGroup.AnnualizedSalary" inverse = "true"/>
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-7"> 
+		<trueoutput>PAYBEN</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="compInfo.benefits-rate" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-13"> 
+		<trueoutput>PAYCARALL</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="payComponentGroup.CAR" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>		
+	<rule id="rule-22"> 
+		<trueoutput>JOBSUPRV</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.manager-id" inverse = "true"/>
+				<!--			<greater id="jobInfo.manager-id"/> --> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-19"> 
+		<trueoutput>JOBEMPCL</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.employee-class" inverse="true"/>
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-20"> 
+		<trueoutput>JOBFTPT</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.is-fulltime-employee" inverse="true"/>
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-17"> 
+		<trueoutput>JOBHOURS</trueoutput> 
+		<conditions> 
+			<and>	
+				<equal id="jobInfo.standard-hours" inverse = "true"/> 
+			</and> 
+		</conditions> 
+	</rule>	
+	<rule id="rule-18"> 
+		<trueoutput>JOBSHIFT</trueoutput> 
+		<conditions> 
+			<and>	
+				<greater id="jobInfo.shift-code"/> 
+			</and> 
+		</conditions> 
+	</rule>
+	<rule id="rule-23"> 
+		<!-- Catch all-->
+	<trueoutput>DATACHG</trueoutput> 
+	<conditions> 
+		<or>	
+			
+		</or> 	
+	</conditions> 
+	</rule>
+</ruleset>

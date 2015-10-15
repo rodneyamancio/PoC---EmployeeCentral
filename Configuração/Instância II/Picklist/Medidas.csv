@@ -1,0 +1,43 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+event,2277,-1.0,-1.0,-1.0,ACTIVE,1,-1,,Additional Job
+event,2278,-1.0,-1.0,-1.0,ACTIVE,2,-1,,Assignment
+event,2279,-1.0,-1.0,-1.0,ACTIVE,3,-1,,Assignment Completion
+event,2280,-1.0,-1.0,-1.0,ACTIVE,16,-1,,Job Change
+event,2281,-1.0,-1.0,-1.0,ACTIVE,15,-1,,Completion of Probation
+event,2282,-1.0,-1.0,-1.0,ACTIVE,5,-1,,Data Change
+event,2283,-1.0,-1.0,-1.0,DELETED,D,-1,,Data Change
+event,2284,-1.0,-1.0,-1.0,ACTIVE,4,-1,,Demotion
+event,2285,-1.0,-1.0,-1.0,DELETED,8,-1,,One Time Bonus
+event,2286,-1.0,-1.0,-1.0,DELETED,6,-1,,Family Status Change
+event,2287,-1.0,-1.0,-1.0,ACTIVE,11,-1,,Furlough
+event,2288,-1.0,-1.0,-1.0,DELETED,,-1,,Hire
+event,2289,-1.0,-1.0,-1.0,ACTIVE,H,-1,,Hire
+event,2290,-1.0,-1.0,-1.0,ACTIVE,9,-1,,Job Reclassification
+event,2291,-1.0,-1.0,-1.0,ACTIVE,10,-1,,Leave of Absence
+event,2292,-1.0,-1.0,-1.0,DELETED,13,-1,,Long Term Disability
+event,2293,-1.0,-1.0,-1.0,DELETED,12,-1,,Long Term Disability With Pay
+event,2294,-1.0,-1.0,-1.0,ACTIVE,12,-1,,Pay Rate Change
+event,2295,-1.0,-1.0,-1.0,ACTIVE,13,-1,,Position Change
+event,2296,-1.0,-1.0,-1.0,ACTIVE,14,-1,,Probation
+event,2297,-1.0,-1.0,-1.0,ACTIVE,8,-1,,Promotion
+event,2298,-1.0,-1.0,-1.0,DELETED,19,-1,,Promotion
+event,2299,-1.0,-1.0,-1.0,DELETED,18,-1,,Recall from Suspension/Layoff
+event,2300,-1.0,-1.0,-1.0,DELETED,,-1,,Rehire
+event,2301,-1.0,-1.0,-1.0,ACTIVE,R,-1,,Rehire
+event,2302,-1.0,-1.0,-1.0,DELETED,21,-1,,Retirement
+event,2303,-1.0,-1.0,-1.0,DELETED,24,-1,,Retirement With Pay
+event,2304,-1.0,-1.0,-1.0,ACTIVE,22,-1,,Return From Disability
+event,2305,-1.0,-1.0,-1.0,DELETED,RL,-1,,Return from Leave
+event,2306,-1.0,-1.0,-1.0,ACTIVE,23,-1,,Return to Work
+event,2307,-1.0,-1.0,-1.0,ACTIVE,7,-1,,Suspension
+event,2308,-1.0,-1.0,-1.0,DELETED,27,-1,,Terminated With Benefits
+event,2309,-1.0,-1.0,-1.0,DELETED,T,-1,,Termination
+event,2310,-1.0,-1.0,-1.0,ACTIVE,26,-1,,Termination
+event,2311,-1.0,-1.0,-1.0,DELETED,28,-1,,Termination With Pay
+event,2312,-1.0,-1.0,-1.0,DELETED,Tr,-1,,Transfer
+event,2313,-1.0,-1.0,-1.0,ACTIVE,6,-1,,Transfer
+event,5857,-1.0,-1.0,-1.0,ACTIVE,29,-1,,One Time Bonus
+event,5882,-1.0,-1.0,-1.0,ACTIVE,GA,-1,,Global Assignment
+event,5885,-1.0,-1.0,-1.0,ACTIVE,EGA,-1,,End Global Assignment
+event,5886,-1.0,-1.0,-1.0,ACTIVE,OGA,-1,,Obsoleto
+event,5887,-1.0,-1.0,-1.0,ACTIVE,SPP,-1,,Iniciar pagamento de pens?o

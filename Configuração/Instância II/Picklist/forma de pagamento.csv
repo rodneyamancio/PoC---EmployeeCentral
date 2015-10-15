@@ -1,0 +1,7 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Pagamento em dinheiro"""
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Pensão Contra Recibo"""
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Pensão Conta Corrente"""
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Pensão Conta Poupança"""
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Func. Contra Recibo"""
+"form_payment,,-1.0,-1.0,-1.0,ACTIVE,,-1,,""Func Conta Poupança"""

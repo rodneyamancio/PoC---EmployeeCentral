@@ -1,0 +1,13 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR,en_DEBUG
+personRelationshipType,5973,-1.0,-1.0,-1.0,ACTIVE,2,-1,Child,Filho(a),Child
+personRelationshipType,5974,-1.0,-1.0,-1.0,ACTIVE,6,-1,Stepchild,Enteado(a),Stepchild
+personRelationshipType,5975,-1.0,-1.0,-1.0,ACTIVE,14,-1,Child of Domestic Partner,Filho(a) de união estável,Child of Domestic Partner
+personRelationshipType,5976,-1.0,-1.0,-1.0,ACTIVE,1,-1,Spouse,Conjugê,Spouse
+personRelationshipType,5977,-1.0,-1.0,-1.0,DELETED,17,-1,Registered Partner,Parceiro Registrado,Registered Partner
+personRelationshipType,5978,-1.0,-1.0,-1.0,DELETED,10,-1,Divorced Spouse,ConjugÃª,Divorced Spouse
+personRelationshipType,5979,-1.0,-1.0,-1.0,ACTIVE,11,-1,Father,Pai,Father
+personRelationshipType,5980,-1.0,-1.0,-1.0,ACTIVE,12,-1,Mother,Mãe,Mother
+personRelationshipType,5981,-1.0,-1.0,-1.0,ACTIVE,15,-1,Brother,Irmão,Brother
+personRelationshipType,5982,-1.0,-1.0,-1.0,ACTIVE,16,-1,Sister,Irmã,Sister
+personRelationshipType,5983,-1.0,-1.0,-1.0,DELETED,8,-1,Related Persons,Related Persons,Related Persons
+personRelationshipType,5984,-1.0,-1.0,-1.0,DELETED,13,-1,Domestic Partner,Domestic Partner,Domestic Partner

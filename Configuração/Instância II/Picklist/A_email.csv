@@ -1,0 +1,3 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR,en_DEBUG
+ecEmailType,5850,-1.0,-1.0,-1.0,ACTIVE,P,-1,Personal,Pessoal,Personal
+ecEmailType,5851,-1.0,-1.0,-1.0,ACTIVE,B,-1,Business,Comercial,Business

@@ -1,0 +1,7 @@
+Subir os certificados na seguinte ordem:
+
+VeriSign.cer
+VeriSign Class 3 Secure Server CA - G3.cer
+successfactors.com.cer
+
+Feito isso, renomear o ultimo certificado para  *successfactor.com.br

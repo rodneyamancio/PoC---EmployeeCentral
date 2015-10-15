@@ -1,0 +1,13 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ personRelationshipType,5973,-1.0,-1.0,-1.0,ACTIVE,  2  ,-1,,  Filho(a)   
+ personRelationshipType,5974,-1.0,-1.0,-1.0,ACTIVE,  6  ,-1,,  Enteado(a)   
+ personRelationshipType,5975,-1.0,-1.0,-1.0,ACTIVE,  14  ,-1,,  Filho(a) de união estável   
+ personRelationshipType,5976,-1.0,-1.0,-1.0,ACTIVE,  1  ,-1,,  Esposo(a)   
+ personRelationshipType,5977,-1.0,-1.0,-1.0,ACTIVE,  17  ,-1,,  União estável   
+ personRelationshipType,5978,-1.0,-1.0,-1.0,ACTIVE,  10  ,-1,,  Conjugê   
+ personRelationshipType,5979,-1.0,-1.0,-1.0,ACTIVE,  11  ,-1,,  Pai   
+ personRelationshipType,5980,-1.0,-1.0,-1.0,ACTIVE,  12  ,-1,,  Mãe   
+ personRelationshipType,5981,-1.0,-1.0,-1.0,ACTIVE,  15  ,-1,,  Irmão   
+ personRelationshipType,5982,-1.0,-1.0,-1.0,ACTIVE,  16  ,-1,,  Irmã   
+ personRelationshipType,5983,-1.0,-1.0,-1.0,DELETED,  8  ,-1,,  Related Persons   
+ personRelationshipType,5984,-1.0,-1.0,-1.0,DELETED,  13  ,-1,,  Domestic Partner   

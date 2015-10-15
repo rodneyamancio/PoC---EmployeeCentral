@@ -1,0 +1,11 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Dados bancários principais   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  F2   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Banco FGTS   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Banco para fins de seguro desemprego   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Banco PIS   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Coordenadas bancárias suplementares   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  CoordBancárias princ p/ off-cycle   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  CoordBancárias suplement. p/ off-cycle   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Coordonnées bancaires attributaire SFT   
+ bank_data,,-1.0,-1.0,-1.0,ACTIVE,,-1,,  Despesas de deslocação   

@@ -1,0 +1,12 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ ecPhoneType,5844,-1.0,-1.0,-1.0,ACTIVE,  H  ,-1,,  Residencial   
+ ecPhoneType,5845,-1.0,-1.0,-1.0,ACTIVE,  B  ,-1,,  Comercial   
+ ecPhoneType,5846,-1.0,-1.0,-1.0,ACTIVE,  B1  ,-1,,  Comercial 1   
+ ecPhoneType,5847,-1.0,-1.0,-1.0,ACTIVE,  C  ,-1,,  Celular   
+ ecPhoneType,5848,-1.0,-1.0,-1.0,ACTIVE,  C1  ,-1,,  Celular 1   
+ ecPhoneType,5849,-1.0,-1.0,-1.0,ACTIVE,  F  ,-1,,  Fax   
+ ecPhoneType,17027,-1.0,-1.0,-1.0,DELETED,  H  ,-1,,  In¡cio   
+ ecPhoneType,17028,-1.0,-1.0,-1.0,DELETED,  B  ,-1,,  Neg¢cio   
+ ecPhoneType,17029,-1.0,-1.0,-1.0,DELETED,  C  ,-1,,  Celular   
+ ecPhoneType,17030,-1.0,-1.0,-1.0,ACTIVE,  O  ,-1,,  Outros   
+ ecPhoneType,17031,-1.0,-1.0,-1.0,DELETED,  F  ,-1,,  Fax   

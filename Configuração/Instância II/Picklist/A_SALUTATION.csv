@@ -1,0 +1,4 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ salutation,1792,-1.0,-1.0,-1.0,ACTIVE,  mr  ,-1,,  Sr   
+ salutation,1793,-1.0,-1.0,-1.0,ACTIVE,  mrs  ,-1,,  Sra   
+ salutation,1794,-1.0,-1.0,-1.0,DELETED,  ms  ,-1,,  Ms.   

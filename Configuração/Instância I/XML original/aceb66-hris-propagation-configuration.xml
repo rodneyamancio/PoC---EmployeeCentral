@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hris-propagations PUBLIC "-//SuccessFactors, Inc.//DTD HRIS Propagation Configuration//EN" "http://svn/viewvc/svn/V4trunk/src/com/sf/dtd/hris-propagation-configuration.dtd">
+<hris-propagations>
+    <propagate foundation-element-id="payComponent">   
+        <field id="currency"> 
+            <destination field-id="currency-code" hris-element-id="payComponentRecurring"/> 
+            <destination field-id="currency-code" hris-element-id="payComponentNonRecurring"/> 
+        </field>        
+    </propagate> 
+    <propagate foundation-element-id="jobCode">
+       <!-- <field id="grade">
+            <destination hris-element-id="jobInfo" field-id="pay-grade"/>
+        </field>  -->
+        <field id="name">
+            <destination field-id="job-title" hris-element-id="jobInfo"/>
+        </field>
+        <field id="isRegular">
+            <destination field-id="regular-temp" hris-element-id="jobInfo"/>
+        </field>
+        <field id="standardHours"> 
+            <destination field-id="standard-hours" hris-element-id="jobInfo"/> 
+        </field>   <!-- Update by Mahesh 05022012 Std hours -->
+    <!--   Bernie update 5-7-1011; add grade-->
+       <field id="grade">
+            <destination field-id="pay-grade" hris-element-id="jobInfo"/>
+            </field>  
+        <!--   D.Primavera update 6-13-2012; add Employee Class, Full Time-->
+        <field id="employeeClass">
+            <destination field-id="employee-class" hris-element-id="jobInfo"/>
+        </field>
+        <field id="isFulltimeEmployee">
+            <destination field-id="is-fulltime-employee" hris-element-id="jobInfo"/>
+        </field>
+        <!--   D.Primavera update 6-13-2012; USA EEO additions- EEO1, EEO4, EEO5, EEO6, EEOClass, FLSA, Local Job Title -->
+        <field id="jobClassLocal.genericNumber1">
+            <destination field-id="eeo1-job-category" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericNumber2">
+            <destination field-id="eeo4-job-category" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericNumber3">
+            <destination field-id="eeo5-job-category" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericNumber4">
+            <destination field-id="eeo6-job-category" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericNumber5">
+            <destination field-id="eeo-class" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericNumber6">
+            <destination field-id="flsa-status" hris-element-id="jobInfo"/>
+        </field>
+        <field country="USA" id="jobClassLocal.genericString1">
+            <destination field-id="local-job-title" hris-element-id="jobInfo"/>
+        </field>
+    </propagate>
+    <!-- Update by Mahesh 05022012 - 1204 Std hours Propogation Logic -->
+    <propagate foundation-element-id="LegalEntity"> 
+        <field id="standardWeeklyHours"> 
+            <destination field-id="standard-hours" hris-element-id="jobInfo"/> 
+        </field> 
+        <field id="countryOfRegistration"> 
+            <destination field-id="country-of-company" hris-element-id="jobInfo"/> 
+        </field> 
+    </propagate> 
+    
+    <propagate foundation-element-id="location">                       
+        <field id="timezone">
+            <destination field-id="timezone" hris-element-id="jobInfo"/>
+        </field>
+        <field id="standardHours"> 
+            <destination field-id="standard-hours" hris-element-id="jobInfo"/>
+        </field>           
+    </propagate> 
+    
+   <!-- <propagate foundation-element-id="jobCode">
+        
+        <field id="grade">
+            <destination hris-element-id="jobInfo" field-id="pay-grade"/>
+        </field>
+    </propagate>  -->
+    
+    
+    <propagation-mapping foundation-field="payComponent.externalCode" hris-field="payComponentRecurring.pay-component"/> 
+    <propagation-mapping foundation-field="payComponent.externalCode" hris-field="payComponentNonRecurring.pay-component-code"/>
+    <propagation-mapping foundation-field="jobCode.externalCode" hris-field="jobInfo.job-code"/> 
+    <propagation-mapping foundation-field="LegalEntity.externalCode" hris-field="jobInfo.company"/> 
+    <propagation-mapping foundation-field="location.externalCode" hris-field="jobInfo.location"/>
+</hris-propagations>

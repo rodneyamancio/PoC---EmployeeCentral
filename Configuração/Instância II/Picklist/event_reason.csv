@@ -1,0 +1,183 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+event-reason,1847,-1.0,-1.0,-1.0,ACTIVE,H,-1,,Hire
+event-reason,1848,-1.0,-1.0,-1.0,ACTIVE,1,-1,,Additional Job
+event-reason,1849,-1.0,-1.0,-1.0,ACTIVE,R,-1,,Rehire
+event-reason,1850,-1.0,-1.0,-1.0,ACTIVE,2,-1,,Assignment Completion
+event-reason,1851,-1.0,-1.0,-1.0,ACTIVE,C,-1,,Change Job
+event-reason,1852,-1.0,-1.0,-1.0,ACTIVE,3,-1,,Assignment
+event-reason,1853,-1.0,-1.0,-1.0,ACTIVE,Tr,-1,,Transfer
+event-reason,1854,-1.0,-1.0,-1.0,ACTIVE,4,-1,,Demotion
+event-reason,1855,-1.0,-1.0,-1.0,ACTIVE,5,-1,,Data Change
+event-reason,1856,-1.0,-1.0,-1.0,ACTIVE,P,-1,,Promotion
+event-reason,1857,-1.0,-1.0,-1.0,ACTIVE,6,-1,,Family Status Change
+event-reason,1858,-1.0,-1.0,-1.0,ACTIVE,D,-1,,Data Change
+event-reason,1859,-1.0,-1.0,-1.0,ACTIVE,T,-1,,Termination
+event-reason,1860,-1.0,-1.0,-1.0,ACTIVE,7,-1,,Hire
+event-reason,1861,-1.0,-1.0,-1.0,ACTIVE,RL,-1,,Return from Leave
+event-reason,1862,-1.0,-1.0,-1.0,ACTIVE,OGA,-1,,Earnings Distribution Change
+event-reason,1863,-1.0,-1.0,-1.0,ACTIVE,9,-1,,Job Reclassification
+event-reason,1864,-1.0,-1.0,-1.0,ACTIVE,10,-1,,Leave of Absence
+event-reason,1865,-1.0,-1.0,-1.0,ACTIVE,11,-1,,Layoff
+event-reason,1866,-1.0,-1.0,-1.0,ACTIVE,12,-1,,Long Term Disability With Pay
+event-reason,1867,-1.0,-1.0,-1.0,ACTIVE,13,-1,,Long Term Disability
+event-reason,1868,-1.0,-1.0,-1.0,ACTIVE,14,-1,,Pay Rate Change
+event-reason,1869,-1.0,-1.0,-1.0,ACTIVE,15,-1,,Position Change
+event-reason,1870,-1.0,-1.0,-1.0,ACTIVE,16,-1,,Probation
+event-reason,1871,-1.0,-1.0,-1.0,ACTIVE,17,-1,,Completion of Probation
+event-reason,1872,-1.0,-1.0,-1.0,ACTIVE,18,-1,,Recall from Suspension/Layoff
+event-reason,1873,-1.0,-1.0,-1.0,ACTIVE,19,-1,,Promotion
+event-reason,1874,-1.0,-1.0,-1.0,ACTIVE,20,-1,,Rehire
+event-reason,1875,-1.0,-1.0,-1.0,ACTIVE,21,-1,,Retirement
+event-reason,1876,-1.0,-1.0,-1.0,ACTIVE,22,-1,,Return From Disability
+event-reason,1877,-1.0,-1.0,-1.0,ACTIVE,23,-1,,Return from Leave
+event-reason,1878,-1.0,-1.0,-1.0,ACTIVE,24,-1,,Retirement With Pay
+event-reason,1879,-1.0,-1.0,-1.0,ACTIVE,25,-1,,Suspension
+event-reason,1880,-1.0,-1.0,-1.0,ACTIVE,26,-1,,Termination
+event-reason,1881,-1.0,-1.0,-1.0,ACTIVE,27,-1,,Terminated With Benefits
+event-reason,1882,-1.0,-1.0,-1.0,ACTIVE,28,-1,,Termination With Pay
+event-reason,1883,-1.0,-1.0,-1.0,ACTIVE,29,-1,,Transfer
+event-reason,2132,-1.0,-1.0,-1.0,ACTIVE,,-1,,Initial Conversion Load
+event-reason,2133,-1.0,-1.0,-1.0,ACTIVE,,-1,,Recall from Suspension/Layoff
+event-reason,2134,-1.0,-1.0,-1.0,ACTIVE,,-1,,Temporary Assignment
+event-reason,2135,-1.0,-1.0,-1.0,ACTIVE,,-1,,Acquired employee
+event-reason,2136,-1.0,-1.0,-1.0,ACTIVE,,-1,,Across-The-Board
+event-reason,2137,-1.0,-1.0,-1.0,ACTIVE,,-1,,Adjustment to Minimum
+event-reason,2138,-1.0,-1.0,-1.0,ACTIVE,,-1,,Benefits Adjustment
+event-reason,2139,-1.0,-1.0,-1.0,ACTIVE,,-1,,Benefits Base Update
+event-reason,2140,-1.0,-1.0,-1.0,ACTIVE,,-1,,Bonus Buyout
+event-reason,2141,-1.0,-1.0,-1.0,ACTIVE,,-1,,California Family Rights Act
+event-reason,2142,-1.0,-1.0,-1.0,ACTIVE,,-1,,Career Path Change
+event-reason,2143,-1.0,-1.0,-1.0,ACTIVE,,-1,,Change Car Allowance
+event-reason,2144,-1.0,-1.0,-1.0,ACTIVE,,-1,,Change of Employee Class
+event-reason,2145,-1.0,-1.0,-1.0,ACTIVE,,-1,,Change Quota/Target Comm
+event-reason,2146,-1.0,-1.0,-1.0,ACTIVE,,-1,,Comp Frequency Change
+event-reason,2147,-1.0,-1.0,-1.0,ACTIVE,,-1,,Correction - Status
+event-reason,2148,-1.0,-1.0,-1.0,ACTIVE,,-1,,Correction-Pay Rate
+event-reason,2149,-1.0,-1.0,-1.0,ACTIVE,,-1,,Cost Center Change
+event-reason,2150,-1.0,-1.0,-1.0,ACTIVE,,-1,,Cost-of Living Adjustment
+event-reason,2151,-1.0,-1.0,-1.0,ACTIVE,,-1,,Currency Conversion
+event-reason,2152,-1.0,-1.0,-1.0,ACTIVE,,-1,,Data Change / Dept Name Change
+event-reason,2153,-1.0,-1.0,-1.0,ACTIVE,,-1,,Data Change / Job Title Update
+event-reason,2154,-1.0,-1.0,-1.0,ACTIVE,,-1,,Death
+event-reason,2155,-1.0,-1.0,-1.0,ACTIVE,,-1,,Demotion with Pay Change
+event-reason,2156,-1.0,-1.0,-1.0,ACTIVE,,-1,,Early Retirement
+event-reason,2157,-1.0,-1.0,-1.0,ACTIVE,,-1,,ECF - Out of Cycle Pay Change
+event-reason,2158,-1.0,-1.0,-1.0,ACTIVE,,-1,,Education
+event-reason,2159,-1.0,-1.0,-1.0,ACTIVE,,-1,,Education Leave
+event-reason,2160,-1.0,-1.0,-1.0,ACTIVE,,-1,,Family and Medical Leave Act
+event-reason,2161,-1.0,-1.0,-1.0,ACTIVE,,-1,,Family Leave Birth/Adoption
+event-reason,2162,-1.0,-1.0,-1.0,ACTIVE,,-1,,Family Leave Serious Illness
+event-reason,2163,-1.0,-1.0,-1.0,ACTIVE,,-1,,Full-time to Part-Time
+event-reason,2164,-1.0,-1.0,-1.0,ACTIVE,,-1,,Health Reasons
+event-reason,2165,-1.0,-1.0,-1.0,ACTIVE,,-1,,Hired from Affiliate
+event-reason,2166,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inter Company Transfer
+event-reason,2167,-1.0,-1.0,-1.0,ACTIVE,,-1,,Internal Equity
+event-reason,2168,-1.0,-1.0,-1.0,ACTIVE,,-1,,Internal Hire Temp Conversion
+event-reason,2169,-1.0,-1.0,-1.0,ACTIVE,,-1,,Internal International Transfer
+event-reason,2170,-1.0,-1.0,-1.0,ACTIVE,,-1,,Internal Int'l Transfer
+event-reason,2171,-1.0,-1.0,-1.0,ACTIVE,,-1,,International Transfer
+event-reason,2172,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Attendance
+event-reason,2173,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Elimination of Position
+event-reason,2174,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination -  Dishonesty
+event-reason,2175,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination -  Divestment
+event-reason,2176,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination -  Extended LOA
+event-reason,2177,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination - Fail To Report
+event-reason,2178,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination - Insubordinate
+event-reason,2179,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination  Non-Performance
+event-reason,2180,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination - Restructuring
+event-reason,2181,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termination - RIF
+event-reason,2182,-1.0,-1.0,-1.0,ACTIVE,,-1,,Inv Termintion- Misconduct
+event-reason,2183,-1.0,-1.0,-1.0,ACTIVE,,-1,,Job Change - Lateral
+event-reason,2184,-1.0,-1.0,-1.0,ACTIVE,,-1,,Job Change Lateral
+event-reason,2185,-1.0,-1.0,-1.0,ACTIVE,,-1,,Job Change to Higher Grade
+event-reason,2186,-1.0,-1.0,-1.0,ACTIVE,,-1,,Job Change to lower grade
+event-reason,2187,-1.0,-1.0,-1.0,ACTIVE,,-1,,Job Reclassification
+event-reason,2188,-1.0,-1.0,-1.0,ACTIVE,,-1,,Jury Leave
+event-reason,2189,-1.0,-1.0,-1.0,ACTIVE,,-1,,Lateral (no req)
+event-reason,2190,-1.0,-1.0,-1.0,ACTIVE,,-1,,Layoff / Strike/Lock-out
+event-reason,2191,-1.0,-1.0,-1.0,ACTIVE,,-1,,Loan from Parent Company
+event-reason,2192,-1.0,-1.0,-1.0,ACTIVE,,-1,,Local Job Title Change
+event-reason,2193,-1.0,-1.0,-1.0,ACTIVE,,-1,,Location Change
+event-reason,2194,-1.0,-1.0,-1.0,ACTIVE,,-1,,Long Term Disability With Pay
+event-reason,2195,-1.0,-1.0,-1.0,ACTIVE,,-1,,Lump Sum Merit Increase
+event-reason,2196,-1.0,-1.0,-1.0,ACTIVE,,-1,,Manager Request
+event-reason,2197,-1.0,-1.0,-1.0,ACTIVE,,-1,,Mandatory Govt Increase
+event-reason,2198,-1.0,-1.0,-1.0,ACTIVE,,-1,,Market Adjustment
+event-reason,2199,-1.0,-1.0,-1.0,ACTIVE,,-1,,Maternity/Paternity
+event-reason,2200,-1.0,-1.0,-1.0,ACTIVE,,-1,,Maternity/Paternity - INTL
+event-reason,2201,-1.0,-1.0,-1.0,ACTIVE,,-1,,Medical Unpaid Leave
+event-reason,2202,-1.0,-1.0,-1.0,ACTIVE,,-1,,Merit
+event-reason,2203,-1.0,-1.0,-1.0,ACTIVE,,-1,,Merit - No Increase
+event-reason,2204,-1.0,-1.0,-1.0,ACTIVE,,-1,,Military Leave Adjustment
+event-reason,2205,-1.0,-1.0,-1.0,ACTIVE,,-1,,Military Service
+event-reason,2206,-1.0,-1.0,-1.0,ACTIVE,,-1,,New Hire
+event-reason,2207,-1.0,-1.0,-1.0,ACTIVE,,-1,,New Position
+event-reason,2208,-1.0,-1.0,-1.0,ACTIVE,,-1,,Normal Career Progression
+event-reason,2209,-1.0,-1.0,-1.0,ACTIVE,,-1,,Normal Retirement
+event-reason,2210,-1.0,-1.0,-1.0,ACTIVE,,-1,,Not Qualified For Disability
+event-reason,2211,-1.0,-1.0,-1.0,ACTIVE,,-1,,Office Location Change
+event-reason,2212,-1.0,-1.0,-1.0,ACTIVE,,-1,,On Probation
+event-reason,2213,-1.0,-1.0,-1.0,ACTIVE,,-1,,OOC/ACR Merit
+event-reason,2214,-1.0,-1.0,-1.0,ACTIVE,,-1,,Other Adjustment
+event-reason,2215,-1.0,-1.0,-1.0,ACTIVE,,-1,,Other Paid Leave
+event-reason,2216,-1.0,-1.0,-1.0,ACTIVE,,-1,,Other Unpaid Leave
+event-reason,2217,-1.0,-1.0,-1.0,ACTIVE,,-1,,Outstanding Performance
+event-reason,2218,-1.0,-1.0,-1.0,ACTIVE,,-1,,Paid Maternity/Paternity Leave
+event-reason,2219,-1.0,-1.0,-1.0,ACTIVE,,-1,,Parental Leave
+event-reason,2220,-1.0,-1.0,-1.0,ACTIVE,,-1,,Partial Family Leave
+event-reason,2221,-1.0,-1.0,-1.0,ACTIVE,,-1,,Partial Medical
+event-reason,2222,-1.0,-1.0,-1.0,ACTIVE,,-1,,Partial/Total Disability
+event-reason,2223,-1.0,-1.0,-1.0,ACTIVE,,-1,,Part-time to Full-Time
+event-reason,2224,-1.0,-1.0,-1.0,ACTIVE,,-1,,Pay Grade Change
+event-reason,2225,-1.0,-1.0,-1.0,ACTIVE,,-1,,Pay Rate Correction
+event-reason,2226,-1.0,-1.0,-1.0,ACTIVE,,-1,,Personal Leave
+event-reason,2227,-1.0,-1.0,-1.0,ACTIVE,,-1,,Position Data Update
+event-reason,2228,-1.0,-1.0,-1.0,ACTIVE,,-1,,Position Inactivated
+event-reason,2229,-1.0,-1.0,-1.0,ACTIVE,,-1,,Position Status Change
+event-reason,2230,-1.0,-1.0,-1.0,ACTIVE,,-1,,Probation Completed
+event-reason,2231,-1.0,-1.0,-1.0,ACTIVE,,-1,,Promotion - No Pay Change
+event-reason,2232,-1.0,-1.0,-1.0,ACTIVE,,-1,,Promotion - Pay Change
+event-reason,2233,-1.0,-1.0,-1.0,ACTIVE,,-1,,Rehire - Acquisition
+event-reason,2234,-1.0,-1.0,-1.0,ACTIVE,,-1,,Reinstatement from WFR
+event-reason,2235,-1.0,-1.0,-1.0,ACTIVE,,-1,,Reorganization
+event-reason,2236,-1.0,-1.0,-1.0,ACTIVE,,-1,,Retention Bonus
+event-reason,2237,-1.0,-1.0,-1.0,ACTIVE,,-1,,Return From Disability
+event-reason,2238,-1.0,-1.0,-1.0,ACTIVE,,-1,,Return From Leave
+event-reason,2239,-1.0,-1.0,-1.0,ACTIVE,,-1,,Sabbatical Leave
+event-reason,2240,-1.0,-1.0,-1.0,ACTIVE,,-1,,Sales Comp Plan Change
+event-reason,2241,-1.0,-1.0,-1.0,ACTIVE,,-1,,Seasonal Closure
+event-reason,2242,-1.0,-1.0,-1.0,ACTIVE,,-1,,Shift Change
+event-reason,2243,-1.0,-1.0,-1.0,ACTIVE,,-1,,Short Term Disability
+event-reason,2244,-1.0,-1.0,-1.0,ACTIVE,,-1,,Short Term Disability With Pay
+event-reason,2245,-1.0,-1.0,-1.0,ACTIVE,,-1,,Staff Reduction
+event-reason,2246,-1.0,-1.0,-1.0,ACTIVE,,-1,,Standard Hours Changed
+event-reason,2247,-1.0,-1.0,-1.0,ACTIVE,,-1,,STD / FMLA Concurrent
+event-reason,2248,-1.0,-1.0,-1.0,ACTIVE,,-1,,Step Progression
+event-reason,2249,-1.0,-1.0,-1.0,ACTIVE,,-1,,Supervisor Change Only
+event-reason,2250,-1.0,-1.0,-1.0,ACTIVE,,-1,,Suspension
+event-reason,2251,-1.0,-1.0,-1.0,ACTIVE,,-1,,Temp to Perm
+event-reason,2252,-1.0,-1.0,-1.0,ACTIVE,,-1,,Temporary Closure
+event-reason,2253,-1.0,-1.0,-1.0,ACTIVE,,-1,,Temporary to Permanent
+event-reason,2254,-1.0,-1.0,-1.0,ACTIVE,,-1,,Terminated With Benefits
+event-reason,2255,-1.0,-1.0,-1.0,ACTIVE,,-1,,Termination With Pay
+event-reason,2256,-1.0,-1.0,-1.0,ACTIVE,,-1,,Title Change
+event-reason,2257,-1.0,-1.0,-1.0,ACTIVE,,-1,,Total Cash Comp Restructure
+event-reason,2258,-1.0,-1.0,-1.0,ACTIVE,,-1,,Transfer - Department Change
+event-reason,2259,-1.0,-1.0,-1.0,ACTIVE,,-1,,Transfer - Employee Request
+event-reason,2260,-1.0,-1.0,-1.0,ACTIVE,,-1,,Transfer - Intern Conversion
+event-reason,2261,-1.0,-1.0,-1.0,ACTIVE,,-1,,Transfer to Affiliate
+event-reason,2262,-1.0,-1.0,-1.0,ACTIVE,,-1,,Unpaid Maternity/Paternity Leave
+event-reason,2263,-1.0,-1.0,-1.0,ACTIVE,,-1,,Unpaid Statutory Holiday
+event-reason,2264,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol - Workk Life Balance
+event-reason,2265,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Career Development
+event-reason,2266,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Resignation to Competitor
+event-reason,2267,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination -  Other
+event-reason,2268,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Assignment
+event-reason,2269,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Compensation
+event-reason,2270,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Early Retiremt
+event-reason,2271,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Health Reasons
+event-reason,2272,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Marriage
+event-reason,2273,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Termination - Personal
+event-reason,2274,-1.0,-1.0,-1.0,ACTIVE,,-1,,Vol Terminaton - School
+event-reason,2275,-1.0,-1.0,-1.0,ACTIVE,,-1,,Voluntary Separation Program
+event-reason,2276,-1.0,-1.0,-1.0,ACTIVE,,-1,,WFR - SHIFT Adjustment

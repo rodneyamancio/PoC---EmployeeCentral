@@ -1,0 +1,28 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR,en_DEBUG
+challengeGroup,6386,-1.0,-1.0,-1.0,ACTIVE,1,-1,Severely Challenged,Defici�ncia f�sica,Severely Challenged
+challengeGroup,6387,-1.0,-1.0,-1.0,ACTIVE,2,-1,Severely Challenged/Trainee,Defici�ncia auditiva,Severely Challenged/Trainee
+challengeGroup,6388,-1.0,-1.0,-1.0,ACTIVE,3,-1,Severely Challenged/Employer,Defici�ncia visual,Severely Challenged/Employer
+challengeGroup,6389,-1.0,-1.0,-1.0,DELETED,4,-1,Challenged Peer,Desafiado pelos Pares,Challenged Peer
+challengeGroup,6390,-1.0,-1.0,-1.0,DELETED,5,-1,Peer/Trainee,De pares / Trainee,Peer/Trainee
+challengeGroup,6391,-1.0,-1.0,-1.0,DELETED,6,-1,Multiple Employed/Severely Challenged,Multiple Empregado / severamente desafiada,Multiple Employed/Severely Challenged
+challengeGroup,6392,-1.0,-1.0,-1.0,DELETED,7,-1,Multiple Employed/Severely Challenged/Training,Multiple empregada / severamente desafiada / Formação,Multiple Employed/Severely Challenged/Training
+challengeGroup,6393,-1.0,-1.0,-1.0,DELETED,8,-1,Multiple Employed/Peer,Multiple empregada / par,Multiple Employed/Peer
+challengeGroup,6394,-1.0,-1.0,-1.0,DELETED,9,-1,Multiple Employed/Peer/Training,Multiple Empregado / par / Formação,Multiple Employed/Peer/Training
+challengeGroup,6395,-1.0,-1.0,-1.0,DELETED,11,-1,Miner's Insurance Policy,Apólice de Seguro de Mineiro,Miner's Insurance Policy
+challengeGroup,6396,-1.0,-1.0,-1.0,DELETED,12,-1,Severely Challenged/Workshops,Severamente desafiada / Oficinas,Severely Challenged/Workshops
+challengeGroup,6397,-1.0,-1.0,-1.0,DELETED,13,-1,Peer/Workshops,De pares / Oficinas,Peer/Workshops
+challengeGroup,6398,-1.0,-1.0,-1.0,DELETED,14,-1,Severely Challenged/Training - Rehab,Severamente desafiada / Formação - Rehab,Severely Challenged/Training - Rehab
+challengeGroup,6399,-1.0,-1.0,-1.0,DELETED,15,-1,Peer/Training - Rehab,De pares / Formação - Rehab,Peer/Training - Rehab
+challengeGroup,6400,-1.0,-1.0,-1.0,DELETED,16,-1,Severly Challenged/Training - Subsequent Year,Severly Desafiado / Formação - ano subseqüente,Severly Challenged/Training - Subsequent Year
+challengeGroup,6401,-1.0,-1.0,-1.0,DELETED,17,-1,Peer/Training - Subsequent Year,De pares / Formação - ano subseqüente,Peer/Training - Subsequent Year
+challengeGroup,6402,-1.0,-1.0,-1.0,DELETED,18,-1,Multiple Severely Challenged/Workshops,Várias severamente desafiada / Oficinas,Multiple Severely Challenged/Workshops
+challengeGroup,6403,-1.0,-1.0,-1.0,DELETED,19,-1,Multiple Peer/Workshops,Vários pares / Oficinas,Multiple Peer/Workshops
+challengeGroup,6404,-1.0,-1.0,-1.0,DELETED,21,-1,Severely Challenged/Other Training,Severamente desafiada Outro Formação /,Severely Challenged/Other Training
+challengeGroup,6405,-1.0,-1.0,-1.0,DELETED,23,-1,Severely Challenged ER/Other Training,ER severamente desafiada / Other Training,Severely Challenged ER/Other Training
+challengeGroup,6406,-1.0,-1.0,-1.0,DELETED,24,-1,Peer/Other Training,De pares / Other Training,Peer/Other Training
+challengeGroup,6407,-1.0,-1.0,-1.0,DELETED,26,-1,Multiple Severely Challenged/Other Training,Multiple severamente desafiada Outro Formação /,Multiple Severely Challenged/Other Training
+challengeGroup,6408,-1.0,-1.0,-1.0,DELETED,28,-1,Multiple Peer/Other Training,Par múltipla / Other Training,Multiple Peer/Other Training
+challengeGroup,6409,-1.0,-1.0,-1.0,DELETED,40,-1,Multiple Severely Challenged/Training - Rehab.,Multiple severamente desafiada / Formação - Rehab.,Multiple Severely Challenged/Training - Rehab.
+challengeGroup,6410,-1.0,-1.0,-1.0,DELETED,41,-1,Multiple Peer Training - Rehab.,Formação de Pares múltipla - Rehab.,Multiple Peer Training - Rehab.
+challengeGroup,6411,-1.0,-1.0,-1.0,DELETED,50,-1,Night-shift - Challenged,Noturno - Desafiado,Night-shift - Challenged
+challengeGroup,6412,-1.0,-1.0,-1.0,DELETED,NA,-1,Work Incapacity,Trabalho Incapacidade,Work Incapacity

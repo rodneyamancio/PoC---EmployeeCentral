@@ -1,0 +1,12 @@
+user-id,start-date,end-date,salary,pay-grade,is-insider,pensionable-salary,pay-type,notes,pay-group,is-eligible-for-benefits,is-eligible-for-car,is-highly-compensated-employee,benefits-rate,event-reason
+ID do Usuário,Data do evento,Data final,Salário,Tabela de pagamento,Insider conforme definido pelo estatuto,Salário aposentável,Tipo de pagamento,Anotações,Grupo salarial,É elegível para benefício,É elegível para carro,Empregado bem remunerado,Taxa de benefícios,Motivo do evento
+pavelino,16/01/1995,700000,Salaried,Y,Y,Y,HIRNEW
+pcunha,01/12/2007,50000,Salaried,Y,Y,Y,HIRNEW
+gantonio,01/10/2010,10000,Salaried,Y,Y,Y,HIRNEW
+aaragao,01/10/2008,30000,Salaried,Y,Y,Y,HIRNEW
+jscarton,20/02/1992,20000,Salaried,N,N,Y,HIRNEW
+cestal,10/10/1994,7000,Salaried,N,N,Y,HIRNEW
+lferreira,01/08/2014,5000,Salaried,Y,Y,Y,HIRNEW
+fdelgado,15/01/1996,8000,Salaried,Y,Y,Y,HIRNEW
+lbenicio,08/05/1991,15000,Salaried,Y,Y,Y,HIRNEW
+rmenezes,01/03/1990,20000,Salaried,N,N,Y,HIRNEW

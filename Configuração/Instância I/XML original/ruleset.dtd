@@ -1,0 +1,61 @@
+<!--
+
+$Id: ruleset.dtd $
+
+$HeadURL: https://svn.successfactors.com/repos/V4/trunk/src/com/sf/dtd/ruleset.dtd $
+
+SuccessFactors confidential and proprietary.
+
+Copyright 2010 SuccessFactors, Inc. 999 Baker Way Suite 500
+San Mateo, CA 94404, U.S.A.  All rights reserved.
+
+This product or document is protected by copyright and distributed
+under licenses restricting its use, copying, distribution, and
+decompilation.  No part of this product or documentation may be
+reproduced in any form by any means without prior written
+authorization of SuccessFactors and its licensors, if any.
+
+DOCUMENTATION IS PROVIDED "AS IS" AND ALL EXPRESS OR IMPLIED
+CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE OR NON-INFRINGEMENT, ARE DISCLAIMED, EXCEPT
+TO THE EXTENT THAT SUCH DISCLAIMERS ARE HELD TO BE LEGALLY
+INVALID.
+
+-->
+<!--
+This DTD defines rules xml configuration.
+-->
+
+<!ELEMENT ruleset (rule*)>
+<!ATTLIST ruleset
+   version CDATA #REQUIRED>
+<!ELEMENT rule (trueoutput, conditions)>
+<!ATTLIST rule
+   id ID #REQUIRED>
+<!ELEMENT trueoutput (#PCDATA)>
+<!ELEMENT conditions ((and | or |xor)+)>
+<!ELEMENT and ((and | or | xor| equal | lesser | greater)*)>
+<!ELEMENT or ((and | or | xor| equal | lesser | greater)*)>
+<!ELEMENT xor ((and | or | xor| equal | lesser | greater)*)>
+<!ELEMENT equal EMPTY>
+<!ATTLIST equal
+   id CDATA #REQUIRED
+   value NMTOKEN #IMPLIED
+   compareToNew (true | false) #IMPLIED
+   inverse (true | false) #IMPLIED
+   > 
+<!ELEMENT lesser EMPTY>
+<!ATTLIST lesser
+   id CDATA #REQUIRED
+   value NMTOKEN #IMPLIED
+   compareToNew (true | false) #IMPLIED
+   inverse (true | false) #IMPLIED
+   >  
+<!ELEMENT greater EMPTY>
+<!ATTLIST greater
+   id CDATA #REQUIRED
+   value NMTOKEN #IMPLIED
+   compareToNew (true | false) #IMPLIED
+   inverse (true | false) #IMPLIED
+   > 

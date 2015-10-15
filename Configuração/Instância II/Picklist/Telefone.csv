@@ -1,0 +1,7 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ecPhoneType,5844,-1.0,-1.0,-1.0,ACTIVE,H,-1,,Residencial
+ecPhoneType,5845,-1.0,-1.0,-1.0,ACTIVE,B,-1,,Comercial
+ecPhoneType,5846,-1.0,-1.0,-1.0,ACTIVE,B1,-1,,Comercial 1
+ecPhoneType,5847,-1.0,-1.0,-1.0,ACTIVE,C,-1,,Celular
+ecPhoneType,5848,-1.0,-1.0,-1.0,ACTIVE,C1,-1,,Outros
+ecPhoneType,5849,-1.0,-1.0,-1.0,ACTIVE,F,-1,,Fax

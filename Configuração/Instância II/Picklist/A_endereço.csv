@@ -1,0 +1,6 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+ addressType,1674,-1.0,-1.0,-1.0,ACTIVE,  business  ,-1,,  Comercial   
+ addressType,1675,-1.0,-1.0,-1.0,ACTIVE,  home  ,-1,,  Residencial   
+ addressType,1778,-1.0,-1.0,-1.0,ACTIVE,  vacation  ,-1,,  Férias 
+ addressType,1779,-1.0,-1.0,-1.0,OBSOLETED,  benefits  ,-1,,  Benefits   
+ addressType,6346,-1.0,-1.0,-1.0,ACTIVE,  Mailing  ,-1,,  Correio

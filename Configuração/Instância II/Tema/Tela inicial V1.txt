@@ -1,0 +1,127 @@
+ <input type="hidden" name="pm_actstr" value="sf/goals">
+<style type="text/css">
+    .fundo
+    {
+        position: absolute;
+        z-index: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100%;
+        font-family: tahoma;
+        margin: 0px;
+    }
+    
+    p
+    {
+        font-family: tahoma;
+        font-size: 11pt;
+        margin: 10px 0px 0px 0px;
+        padding: 0;
+    }
+    .tdBemVindo
+    {
+        text-align: center;
+        background-color: #4B3386;
+        color: #ffffff;
+        height: 50px;
+        font-size: 17pt;
+        font-weight: bold;
+    }
+    .footer
+    {
+        padding: 1200px 0;
+        height: 80px;
+        background: #FFFFFF;      
+        text-align: center;
+    }
+    
+    .footer p
+    {
+        margin: 0;
+        line-height: normal;
+        color: #F27320;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    .footer a
+    {
+        color: #009e58;        
+    }
+    
+    .footer a:hover
+    {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="fundo">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr><td style="height: 10px;"></td></tr>
+        <tr>
+            <td align="center" style="padding-bottom: 5px;">
+                <img src="http://www.brf-global.com/brasil/sites/brasil/themes/custom/brf/images/logo.png" alt="Company Logo" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="tdBemVindo">
+                Bem vindo ao SuccessFactors!
+            </td>
+        </tr>
+        <tr><td style="height: 0px;"></td></tr>
+        <tr>
+            <td align="center" style="height: 850px; background: url(http://www.brf-global.com/sites/brasil/themes/custom/brf/images/bg-banner-marcas.png);">
+                <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td align="center">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tr>
+                                    <td align="center" colspan="2" style="padding: 15px;">
+                                        <b>${WARNING_MSG}</b> <b>${LOGOUT_MSG}</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" style="padding-right: 5px; width: 50%;">
+                                        <label for="employee ID">
+                                            <b>Usuário:</b></label>
+                                    </td>
+                                    <td align="left">
+                                        ${LOGIN}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" style="padding-right: 5px; width: 50%;">
+                                        <label for="password">
+                                            <b>Senha:</b></label>
+                                    </td>
+                                    <td align="left">
+                                        ${PASSWORD}
+                                    </td>
+                                </tr>
+                                    <tr>
+                                    <td align="left" style="padding: 10px 0px;">
+                                        ${SUBMIT_BTN}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td align="left" style="padding: 10px 0px;">
+                                        ${FORGOT_PASSWORD}<br />
+                                        ${FORGOT_USERNAME}
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr><td style="height: 5px;"></td></tr>
+        <tr>
+            <td align="center" class="footer">
+                <p>Favor inserir seu usuário e senha de acesso.</p>
+            </td>
+        </tr>
+    </table>
+</div>-

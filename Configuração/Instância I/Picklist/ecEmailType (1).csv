@@ -1,0 +1,6 @@
+^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
+"ecEmailType,5850,-1.0,-1.0,-1.0,ACTIVE,""P"",-1,,""Pessoal"""
+"ecEmailType,5851,-1.0,-1.0,-1.0,DELETED,""B"",-1,,""Business"""
+"ecEmailType,17159,-1.0,-1.0,-1.0,DELETED,""P"",-1,,""Pessoal"""
+"ecEmailType,17160,-1.0,-1.0,-1.0,ACTIVE,""O"",-1,,""Outros"""
+"ecEmailType,17161,-1.0,-1.0,-1.0,ACTIVE,""B"",-1,,""Comercial"""

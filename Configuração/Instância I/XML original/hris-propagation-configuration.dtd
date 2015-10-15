@@ -1,0 +1,47 @@
+<!--
+$HeadURL$
+
+SuccessFactors confidential and proprietary.
+
+Copyright 2010 SuccessFactors, Inc. 999 Baker Way Suite 500
+San Mateo, CA 94404, U.S.A.  All rights reserved.
+
+This product or document is protected by copyright and distributed
+under licenses restricting its use, copying, distribution, and
+decompilation.  No part of this product or documentation may be
+reproduced in any form by any means without prior written
+authorization of SuccessFactors and its licensors, if any.
+
+DOCUMENTATION IS PROVIDED "AS IS" AND ALL EXPRESS OR IMPLIED
+CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY
+IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE OR NON-INFRINGEMENT, ARE DISCLAIMED, EXCEPT
+TO THE EXTENT THAT SUCH DISCLAIMERS ARE HELD TO BE LEGALLY
+INVALID.
+
+-->
+<!--
+This DTD defines propagation from foundation objects to employee data
+-->
+
+<!ELEMENT hris-propagations (propagate+,propagation-mapping+)>
+<!ELEMENT destination EMPTY>
+<!ATTLIST destination
+  hris-element-id NMTOKEN #REQUIRED
+  field-id NMTOKEN #REQUIRED
+>
+<!ELEMENT field (destination+)>
+<!ATTLIST field
+  id NMTOKEN #REQUIRED
+  country NMTOKEN #IMPLIED
+>
+
+<!ELEMENT propagate (field+) >
+<!ATTLIST propagate
+  foundation-element-id NMTOKEN #REQUIRED  
+>
+<!ELEMENT propagation-mapping EMPTY >
+<!ATTLIST propagation-mapping
+  foundation-field NMTOKEN #REQUIRED 
+  hris-field NMTOKEN #REQUIRED 
+>

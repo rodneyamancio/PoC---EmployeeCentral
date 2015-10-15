@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset version="1.0">
+	<rule id="rule-61">
+		<!--Address Change-->
+		<trueoutput>AddressChange</trueoutput>
+		<conditions>
+			<or>
+				<equal id="homeAddress.county.home" inverse="true"/>
+				<equal id="homeAddress.address1.home" inverse="true"/>
+				<equal id="homeAddress.address2.home" inverse="true"/>
+				<equal id="homeAddress.city.home" inverse="true"/>
+				<equal id="homeAddress.state.home" inverse="true"/>
+				<equal id="homeAddress.zip-code.home" inverse="true"/>
+			</or>
+		</conditions>
+	</rule>            
+	<rule id="rule-AGA">
+		<!--Of Event = Add Global Assignment-->
+		<trueoutput>ADD_GA</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="ADD_GA" compareToNew="true" />
+			</or>
+		</conditions>
+	</rule> 
+	<rule id="rule-EGA">
+		<!--Of Event = End Global Assignment-->
+		<trueoutput>END_GA</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="END_GA" compareToNew="true" />
+			</or>
+		</conditions>
+	</rule> 
+	<rule id="rule-A">
+		<!--Position Transfer-->
+		<trueoutput>POS_XFR</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="POS_XFR" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-B">
+		<!--Position Reclassification -->
+		<trueoutput>POS_RECLASS</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="POS_RECLASS" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule> 
+	<rule id="rule-7">
+		<!--If Event Reason = SPOT, then SPOT-->
+		<trueoutput>SPOT</trueoutput>
+		<conditions>
+			<and>
+				<equal id="payComponentNonRecurring.pay-component-code" value="SPOT" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-98">
+		<!--If Event Reason = PROPWP then PROMO_PAY -->
+		<trueoutput>PROMO_PAY</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="PROPWP" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-97">
+		<!--If Event Reason = DEMORPAY, then DEMO_PAY -->
+		<trueoutput>DEMO_PAY</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="DEMORPAY" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-1">
+		<!--If Event = Demotion, then DEMOT-->
+		<trueoutput>DEMOT</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="4" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-6">
+		<!--If Event = Promotion, then PROMO-->
+		<trueoutput>PROMO</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="8" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+
+	<rule id="rule-18">
+		<!--If Event = Hire or Rehire, then HIRE-->
+		<trueoutput>HIRE</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event" value="H" compareToNew="true"/>
+				<equal id="jobInfo.event" value="R" compareToNew="true"/>
+			</or>
+		</conditions>
+	</rule>
+	<rule id="rule-19">
+		<!--If Event = Termination, then TERM-->
+		<trueoutput>TERM</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="26" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-14">
+		<!--Transfer: Business Unit -->
+		<trueoutput>XFRBU</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="TRANBU" compareToNew="true"/>
+				<equal id="jobInfo.event-reason" value="TRANBUP" compareToNew="true"/>
+			</or>
+		</conditions>
+	</rule>	
+	
+	<rule id="rule-15">
+		<!--Transfer: Division -->
+		<trueoutput>XFRDIV</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="TRANDIV" compareToNew="true"/>
+				<equal id="jobInfo.event-reason" value="TRANDIVP" compareToNew="true"/>
+			</or>
+		</conditions>
+	</rule>	
+	
+	<rule id="rule-16">
+		<!--Transfer: Department -->
+		<trueoutput>XFRDEP</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="TRANDEPT" compareToNew="true"/>
+				<equal id="jobInfo.event-reason" value="TRANDEPTP" compareToNew="true"/>
+			</or>
+		</conditions>
+	</rule>	
+	
+	<rule id="rule-17">
+		<!--Transfer: Location -->
+		<trueoutput>XFRLOC</trueoutput>
+		<conditions>
+			<or>
+				<equal id="jobInfo.event-reason" value="TRANLOC" compareToNew="true"/>
+				<equal id="jobInfo.event-reason" value="TRANLOCP" compareToNew="true"/>
+			</or>
+		</conditions>
+	</rule>	
+	
+	<rule id="rule-8">
+		<!--If Event = Return to Work, then RTN-->
+		<trueoutput>RTN</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="23" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-9">
+		<!--If Event = Leave of Absence, then LOA-->
+		<trueoutput>LOA</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="10" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-4">
+		<!--If Event = Job Change, then JOBCHNG-->
+		<trueoutput>JOBCHNG</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="16" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-5">
+		<!--If Event = Transfer, then XFER-->
+		<trueoutput>XFER</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event" value="6" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-20">
+		<!--If Event Reason = POSCHG, then POSCHG_NP -->
+		<trueoutput>POSCHG_NP</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="POSCHG" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-20A">
+		<!--If Event Reason = POSCHGPAY, then POSCHG_P -->
+		<trueoutput>POSCHG_P</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="POSCHGPAY" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-13">
+		<!--Supervisor Change Only-->
+		<trueoutput>ChgSuprv</trueoutput>
+		<conditions>
+			<and>
+				<equal id="jobInfo.event-reason" value="JOBSUPRV" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>	
+	<rule id="rule-50">
+		<trueoutput>NameChange</trueoutput>
+		<conditions>
+			<or>      
+				<equal id="personalInfo.last-name" inverse="true"/>
+				<equal id="personalInfo.first-name" inverse="true"/>
+				<equal id="personalInfo.middle-name" inverse="true"/>
+			</or>  
+		</conditions>
+	</rule>
+	<rule id="rule-28">
+		<!--If Change to Employment Dates then EMPLY_CHG-->
+		<trueoutput>EMPLY_CHG</trueoutput>
+		<conditions>
+			<or>
+				<equal id="employmentInfo.seniorityDate" inverse="true"/>
+				<equal id="employmentInfo.professionalServiceDate" inverse="true"/>
+				<equal id="employmentInfo.benefits-eligibility-start-date" inverse="true"/>
+				<equal id="employmentInfo.originalStartDate" inverse="true"/>
+				<equal id="employmentInfo.initialStockGrant" inverse="true"/>
+				<equal id="employmentInfo.initialOptionGrant" inverse="true"/>
+			</or>
+		</conditions>
+	</rule>
+	<rule id="rule-27">
+		<!--If Change to Stock Elig then STOCK_CHG-->
+		<trueoutput>STOCK_CHG</trueoutput>
+		<conditions>
+			<or>
+				<equal id="employmentInfo.eligibleForStock" inverse="true"/>
+				<equal id="employmentInfo.initialStockGrant" inverse="true"/>
+				<equal id="employmentInfo.initialOptionGrant" inverse="true"/>
+			</or>
+		</conditions>
+	</rule>
+	<rule id="rule-52">
+		<trueoutput>MarStatusChange</trueoutput>
+		<conditions>
+			<and>      
+				<equal id="personalInfo.marital-status" inverse="true"/>
+			</and>  
+		</conditions>
+	</rule>
+	<rule id="rule-53">
+		<trueoutput>GenderChange</trueoutput>
+		<conditions>
+			<and>      
+				<equal id="personalInfo.gender" inverse="true"/>
+			</and>  
+		</conditions>
+	</rule>
+	<rule id="rule-60">
+		<trueoutput>LastNameChangeWorkflow</trueoutput>
+		<conditions>
+			<and>      
+				<equal id="personalInfo.last-name" inverse="true"/>
+			</and>  
+		</conditions>
+	</rule>
+	<rule id="rule-3">
+		<!--If Event = Pay Rate Change, then PYRTCHNG-->
+		<trueoutput>PYRTCHNG</trueoutput>
+		<conditions>
+			<and>
+				<equal id="compInfo.event" value="12" compareToNew="true"/>
+			</and>
+		</conditions>
+	</rule>
+	<rule id="rule-10">
+		<!--otherwise, Data Change-->
+		<trueoutput>DTACHNG</trueoutput>
+		<conditions>
+			<or>
+		</or>
+		</conditions>
+	</rule>
+</ruleset>
