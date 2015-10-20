@@ -103,7 +103,7 @@
     <label xml:lang="fi-FI">Sähköposti</label>
     <label xml:lang="fr-CA">Courriel</label>
     <label xml:lang="fr-FR">E-mail</label>
-    <label xml:lang="he-IL">דוא&quot;ל</label>
+    <label xml:lang="he-IL">דוא"ל</label>
     <label xml:lang="hi-IN">ईमेल</label>
     <label xml:lang="hr-HR">E-pošta</label>
     <label xml:lang="hu-HU">E-mail</label>
@@ -1627,7 +1627,7 @@
     <label xml:lang="es-MX">Línea de dirección 1</label>
     <label xml:lang="fi-FI">Osoiterivi 1</label>
     <label xml:lang="fr-CA">Ligne d'adresse 1</label>
-    <label xml:lang="fr-FR">Ligne d'adresse 1</label>
+    <label xml:lang="fr-FR">Ligne d'adresse&#160;1</label>
     <label xml:lang="he-IL">שורת כתובת 1</label>
     <label xml:lang="hi-IN">पता पंक्ति 1</label>
     <label xml:lang="hr-HR">Adresna linija 1</label>
@@ -1668,7 +1668,7 @@
     <label xml:lang="es-MX">Línea de dirección 2</label>
     <label xml:lang="fi-FI">Osoiterivi 2</label>
     <label xml:lang="fr-CA">Ligne d'adresse 2</label>
-    <label xml:lang="fr-FR">Ligne d'adresse 2</label>
+    <label xml:lang="fr-FR">Ligne d'adresse&#160;2</label>
     <label xml:lang="he-IL">שורת כתובת 2</label>
     <label xml:lang="hi-IN">पता पंक्ति 2</label>
     <label xml:lang="hr-HR">Adresna linija 2</label>
@@ -1709,7 +1709,7 @@
     <label xml:lang="es-MX">Línea de dirección 3</label>
     <label xml:lang="fi-FI">Osoiterivi 3</label>
     <label xml:lang="fr-CA">Ligne d'adresse 3</label>
-    <label xml:lang="fr-FR">Ligne d'adresse 3</label>
+    <label xml:lang="fr-FR">Ligne d'adresse&#160;3</label>
     <label xml:lang="he-IL">שורת כתובת 3</label>
     <label xml:lang="hi-IN">पता पंक्ति 3</label>
     <label xml:lang="hr-HR">Adresna linija 3</label>
@@ -1996,7 +1996,7 @@
     <label xml:lang="es-MX">Campo personalizable 1</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 1</label>
     <label xml:lang="fr-CA">Champ personnalisable 1</label>
-    <label xml:lang="fr-FR">Champ personnalisable 1</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;1</label>
     <label xml:lang="he-IL">שדה מותאם אישית 1</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 1</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 1</label>
@@ -2037,7 +2037,7 @@
     <label xml:lang="es-MX">Campo personalizable 2</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 2</label>
     <label xml:lang="fr-CA">Champ personnalisable 2</label>
-    <label xml:lang="fr-FR">Champ personnalisable 2</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;2</label>
     <label xml:lang="he-IL">שדה מותאם אישית 2</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 2</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 2</label>
@@ -2078,7 +2078,7 @@
     <label xml:lang="es-MX">Campo personalizable 3</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 3</label>
     <label xml:lang="fr-CA">Champ personnalisable 3</label>
-    <label xml:lang="fr-FR">Champ personnalisable 3</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;3</label>
     <label xml:lang="he-IL">שדה מותאם אישית 3</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 3</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 3</label>
@@ -2119,7 +2119,7 @@
     <label xml:lang="es-MX">Campo personalizable 4</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 4</label>
     <label xml:lang="fr-CA">Champ personnalisable 4</label>
-    <label xml:lang="fr-FR">Champ personnalisable 4</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;4</label>
     <label xml:lang="he-IL">שדה מותאם אישית 4</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 4</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 4</label>
@@ -2160,7 +2160,7 @@
     <label xml:lang="es-MX">Campo personalizable 5</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 5</label>
     <label xml:lang="fr-CA">Champ personnalisable 5</label>
-    <label xml:lang="fr-FR">Champ personnalisable 5</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;5</label>
     <label xml:lang="he-IL">שדה מותאם אישית 5</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 5</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 5</label>
@@ -2201,7 +2201,7 @@
     <label xml:lang="es-MX">Campo personalizable 6</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 6</label>
     <label xml:lang="fr-CA">Champ personnalisable 6</label>
-    <label xml:lang="fr-FR">Champ personnalisable 6</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;6</label>
     <label xml:lang="he-IL">שדה מותאם אישית 6</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 6</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 6</label>
@@ -2242,7 +2242,7 @@
     <label xml:lang="es-MX">Campo personalizable 7</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 7</label>
     <label xml:lang="fr-CA">Champ personnalisable 7</label>
-    <label xml:lang="fr-FR">Champ personnalisable 7</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;7</label>
     <label xml:lang="he-IL">שדה מותאם אישית 7</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 7</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 7</label>
@@ -2283,7 +2283,7 @@
     <label xml:lang="es-MX">Campo personalizable 8</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 8</label>
     <label xml:lang="fr-CA">Champ personnalisable 8</label>
-    <label xml:lang="fr-FR">Champ personnalisable 8</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;8</label>
     <label xml:lang="he-IL">שדה מותאם אישית 8</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 8</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 8</label>
@@ -2324,7 +2324,7 @@
     <label xml:lang="es-MX">Campo personalizable 9</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 9</label>
     <label xml:lang="fr-CA">Champ personnalisable 9</label>
-    <label xml:lang="fr-FR">Champ personnalisable 9</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;9</label>
     <label xml:lang="he-IL">שדה מותאם אישית 9</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 9</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 9</label>
@@ -2365,7 +2365,7 @@
     <label xml:lang="es-MX">Campo personalizable 10</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 10</label>
     <label xml:lang="fr-CA">Champ personnalisable 10</label>
-    <label xml:lang="fr-FR">Champ personnalisable 10</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;10</label>
     <label xml:lang="he-IL">שדה מותאם אישית 10</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 10</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 10</label>
@@ -2406,7 +2406,7 @@
     <label xml:lang="es-MX">Campo personalizable 11</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 11</label>
     <label xml:lang="fr-CA">Champ personnalisable 11</label>
-    <label xml:lang="fr-FR">Champ personnalisable 11</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;11</label>
     <label xml:lang="he-IL">שדה מותאם אישית 11</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 11</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 11</label>
@@ -2447,7 +2447,7 @@
     <label xml:lang="es-MX">Campo personalizable 12</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 12</label>
     <label xml:lang="fr-CA">Champ personnalisable 12</label>
-    <label xml:lang="fr-FR">Champ personnalisable 12</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;12</label>
     <label xml:lang="he-IL">שדה מותאם אישית 12</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 12</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 12</label>
@@ -2488,7 +2488,7 @@
     <label xml:lang="es-MX">Campo personalizable 13</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 13</label>
     <label xml:lang="fr-CA">Champ personnalisable 13</label>
-    <label xml:lang="fr-FR">Champ personnalisable 13</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;13</label>
     <label xml:lang="he-IL">שדה מותאם אישית 13</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 13</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 13</label>
@@ -2529,7 +2529,7 @@
     <label xml:lang="es-MX">Campo personalizable 14</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 14</label>
     <label xml:lang="fr-CA">Champ personnalisable 14</label>
-    <label xml:lang="fr-FR">Champ personnalisable 14</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;14</label>
     <label xml:lang="he-IL">שדה מותאם אישית 14</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 14</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 14</label>
@@ -2570,7 +2570,7 @@
     <label xml:lang="es-MX">Campo personalizable 15</label>
     <label xml:lang="fi-FI">Asiakaskohtainen kenttä 15</label>
     <label xml:lang="fr-CA">Champ personnalisable 15</label>
-    <label xml:lang="fr-FR">Champ personnalisable 15</label>
+    <label xml:lang="fr-FR">Champ personnalisable&#160;15</label>
     <label xml:lang="he-IL">שדה מותאם אישית 15</label>
     <label xml:lang="hi-IN">अनुकूलनीय फ़ील्ड 15</label>
     <label xml:lang="hr-HR">Prilagodljivo polje 15</label>
@@ -3269,7 +3269,7 @@
     <label xml:lang="es-MX">Meta de suma global 2</label>
     <label xml:lang="fi-FI">Tavoitekertasumma 2</label>
     <label xml:lang="fr-CA">Cible du montant forfaitaire 2</label>
-    <label xml:lang="fr-FR">Montant forfaitaire cible 2</label>
+    <label xml:lang="fr-FR">Montant forfaitaire cible&#160;2</label>
     <label xml:lang="he-IL">יעד סכום כולל 2</label>
     <label xml:lang="hi-IN">एक मुश्त 2 लक्ष्य</label>
     <label xml:lang="hr-HR">Cilj 2. paušalnog iznosa</label>
@@ -4401,7 +4401,7 @@
     <label xml:lang="pt-BR">Status da licença</label>
     <label xml:lang="pt-PT">Status Em licença</label>
     <label xml:lang="ro-RO">Stare În concediu</label>
-    <label xml:lang="ru-RU">Статус &quot;В отпуске&quot;</label>
+    <label xml:lang="ru-RU">Статус "В отпуске"</label>
     <label xml:lang="sk-SK">Stav Na dovolenke</label>
     <label xml:lang="sl-SI">Status na dopustu</label>
     <label xml:lang="sr-RS">Status Na odsustvu</label>
@@ -5376,7 +5376,7 @@
       <label xml:lang="es-MX">¿Estudiante?</label>
       <label xml:lang="fi-FI">Opiskelija?</label>
       <label xml:lang="fr-CA">Étudiant?</label>
-      <label xml:lang="fr-FR">Étudiant ?</label>
+      <label xml:lang="fr-FR">Étudiant&#160;?</label>
       <label xml:lang="he-IL">סטודנט?</label>
       <label xml:lang="hi-IN">विद्यार्थी?</label>
       <label xml:lang="hr-HR">Student?</label>
@@ -5418,7 +5418,7 @@
       <label xml:lang="es-MX">¿Fumador?</label>
       <label xml:lang="fi-FI">Tupakoija?</label>
       <label xml:lang="fr-CA">Fumeur?</label>
-      <label xml:lang="fr-FR">Fumeur ?</label>
+      <label xml:lang="fr-FR">Fumeur&#160;?</label>
       <label xml:lang="he-IL">מעשן?</label>
       <label xml:lang="hi-IN">धूम्रपानकर्ता?</label>
       <label xml:lang="hr-HR">Pušač?</label>
@@ -5460,7 +5460,7 @@
       <label xml:lang="es-MX">¿Discapacitado?</label>
       <label xml:lang="fi-FI">Vammautunut?</label>
       <label xml:lang="fr-CA">Handicapé?</label>
-      <label xml:lang="fr-FR">Handicapé ?</label>
+      <label xml:lang="fr-FR">Handicapé&#160;?</label>
       <label xml:lang="he-IL">נכה?</label>
       <label xml:lang="hi-IN">विकलांग?</label>
       <label xml:lang="hr-HR">Osoba s invaliditetom?</label>
@@ -9771,7 +9771,7 @@
     <label xml:lang="vi-VN">Mục tiêu tổng thể</label>
     <label xml:lang="zh-CN">目标总分</label>
     <label xml:lang="zh-TW">整體目標</label>
-    <description></description>
+    <description/>
     <rating-field rating-name="start-date" visibility="none" max-length="12" display-size="12" max-file-size-KB="1000">
       <label>Start Date</label>
       <label xml:lang="ar-SA">تاريخ البدء</label>
@@ -10223,7 +10223,7 @@
     <label xml:lang="vi-VN">Năng lực tổng thể</label>
     <label xml:lang="zh-CN">能力素质总分</label>
     <label xml:lang="zh-TW">整體職能</label>
-    <description></description>
+    <description/>
     <rating-field rating-name="start-date" visibility="none" max-length="12" display-size="12" max-file-size-KB="1000">
       <label>Start Date</label>
       <label xml:lang="ar-SA">تاريخ البدء</label>
@@ -13652,7 +13652,7 @@
       <label xml:lang="es-MX">Nombre alt1</label>
       <label xml:lang="fi-FI">Vaiht1 Etunimi</label>
       <label xml:lang="fr-CA">Alt1 Prénom</label>
-      <label xml:lang="fr-FR">Prénom alternatif 1</label>
+      <label xml:lang="fr-FR">Prénom alternatif&#160;1</label>
       <label xml:lang="he-IL">שם פרטי חלופה 1</label>
       <label xml:lang="hi-IN">विकल्प1 पहला नाम</label>
       <label xml:lang="hr-HR">Alternativno ime 1</label>
@@ -13693,7 +13693,7 @@
       <label xml:lang="es-MX">Segundo nombre alt1</label>
       <label xml:lang="fi-FI">Vaiht1 Toinen etunimi</label>
       <label xml:lang="fr-CA">Alt1 Second prénom</label>
-      <label xml:lang="fr-FR">Deuxième prénom alternatif 1</label>
+      <label xml:lang="fr-FR">Deuxième prénom alternatif&#160;1</label>
       <label xml:lang="he-IL">שם נוסף חלופה 1</label>
       <label xml:lang="hi-IN">विकल्प1 मध्य नाम</label>
       <label xml:lang="hr-HR">Alternativno srednje ime 1</label>
@@ -13734,7 +13734,7 @@
       <label xml:lang="es-MX">Apellidos alt1</label>
       <label xml:lang="fi-FI">Vaiht1 Sukunimi</label>
       <label xml:lang="fr-CA">Alt1 Nom</label>
-      <label xml:lang="fr-FR">Nom alternatif 1</label>
+      <label xml:lang="fr-FR">Nom alternatif&#160;1</label>
       <label xml:lang="he-IL">שם משפחה חלופה 1</label>
       <label xml:lang="hi-IN">विकल्प1 अंतिम नाम</label>
       <label xml:lang="hr-HR">Alternativno prezime 1</label>
@@ -13775,7 +13775,7 @@
       <label xml:lang="es-MX">Nombre alt2</label>
       <label xml:lang="fi-FI">Vaiht2 Etunimi</label>
       <label xml:lang="fr-CA">Alt2 Prénom</label>
-      <label xml:lang="fr-FR">Prénom alternatif 2</label>
+      <label xml:lang="fr-FR">Prénom alternatif&#160;2</label>
       <label xml:lang="he-IL">שם פרטי חלופה 2</label>
       <label xml:lang="hi-IN">विकल्प2 पहला नाम</label>
       <label xml:lang="hr-HR">Alternativno ime 2</label>
@@ -13816,7 +13816,7 @@
       <label xml:lang="es-MX">Segundo nombre alt2</label>
       <label xml:lang="fi-FI">Vaiht2 Toinen etunimi</label>
       <label xml:lang="fr-CA">Alt2 Second prénom</label>
-      <label xml:lang="fr-FR">Deuxième prénom alternatif 2</label>
+      <label xml:lang="fr-FR">Deuxième prénom alternatif&#160;2</label>
       <label xml:lang="he-IL">שם נוסף חלופה 2</label>
       <label xml:lang="hi-IN">विकल्प2 मध्य नाम</label>
       <label xml:lang="hr-HR">Alternativno srednje ime 2</label>
@@ -13857,7 +13857,7 @@
       <label xml:lang="es-MX">Apellidos alt2</label>
       <label xml:lang="fi-FI">Vaiht2 Sukunimi</label>
       <label xml:lang="fr-CA">Alt2 Nom</label>
-      <label xml:lang="fr-FR">Nom alternatif 2</label>
+      <label xml:lang="fr-FR">Nom alternatif&#160;2</label>
       <label xml:lang="he-IL">שם משפחה חלופה 2</label>
       <label xml:lang="hi-IN">विकल्प2 अंतिम नाम</label>
       <label xml:lang="hr-HR">Alternativno prezime 2</label>
@@ -14228,7 +14228,7 @@
       <label xml:lang="es-MX">Mostrar nombre alt1</label>
       <label xml:lang="fi-FI">Näytettävä nimi Vaiht1</label>
       <label xml:lang="fr-CA">Afficher le nom Alt1</label>
-      <label xml:lang="fr-FR">Autre nom d'affichage 1</label>
+      <label xml:lang="fr-FR">Autre nom d'affichage&#160;1</label>
       <label xml:lang="he-IL">שם תצוגה חלופה 1</label>
       <label xml:lang="hi-IN">प्रदर्शन नाम विकल्प1</label>
       <label xml:lang="hr-HR">Alternativno ime za prikaz 1</label>
@@ -14269,7 +14269,7 @@
       <label xml:lang="es-MX">Mostrar nombre alt2</label>
       <label xml:lang="fi-FI">Näytettävä nimi Vaiht2</label>
       <label xml:lang="fr-CA">Afficher le nom Alt2</label>
-      <label xml:lang="fr-FR">Autre nom d'affichage 2</label>
+      <label xml:lang="fr-FR">Autre nom d'affichage&#160;2</label>
       <label xml:lang="he-IL">שם תצוגה חלופה 2</label>
       <label xml:lang="hi-IN">प्रदर्शन नाम विकल्प2</label>
       <label xml:lang="hr-HR">Alternativno ime za prikaz 2</label>
@@ -14310,7 +14310,7 @@
       <label xml:lang="es-MX">Nombre formal alt1</label>
       <label xml:lang="fi-FI">Muodollinen nimi Vaiht1</label>
       <label xml:lang="fr-CA">Nom formel Alt1</label>
-      <label xml:lang="fr-FR">Autre nom officiel 1</label>
+      <label xml:lang="fr-FR">Autre nom officiel&#160;1</label>
       <label xml:lang="he-IL">שם רשמי חלופה 1</label>
       <label xml:lang="hi-IN">औपचारिक नाम विकल्प1</label>
       <label xml:lang="hr-HR">Alternativno formalno ime 1</label>
@@ -14351,7 +14351,7 @@
       <label xml:lang="es-MX">Nombre formal alt2</label>
       <label xml:lang="fi-FI">Muodollinen nimi Vaiht2</label>
       <label xml:lang="fr-CA">Nom formel Alt2</label>
-      <label xml:lang="fr-FR">Autre nom officiel 2</label>
+      <label xml:lang="fr-FR">Autre nom officiel&#160;2</label>
       <label xml:lang="he-IL">שם רשמי חלופה 2</label>
       <label xml:lang="hi-IN">औपचारिक नाम विकल्प2</label>
       <label xml:lang="hr-HR">Alternativno formalno ime 2</label>
@@ -14417,7 +14417,7 @@
       <label xml:lang="zh-CN">定制姓名格式</label>
       <label xml:lang="zh-TW">自訂姓名格式</label>
     </hris-field>
-    <hris-field max-length="128" id="custom-string1" visibility="none">
+    <hris-field max-length="256" id="custom-string1" visibility="none">
       <label>Preferred Name</label>
       <label xml:lang="ar-SA">الاسم المفضل</label>
       <label xml:lang="bg-BG">Предпочитано име</label>
@@ -15932,7 +15932,7 @@
     <label xml:lang="fi-FI">Sähköpostitiedot</label>
     <label xml:lang="fr-CA">Informations sur le courriel</label>
     <label xml:lang="fr-FR">Informations sur l’e-mail</label>
-    <label xml:lang="he-IL">פרטי דוא&quot;ל</label>
+    <label xml:lang="he-IL">פרטי דוא"ל</label>
     <label xml:lang="hi-IN">ईमेल जानकारी</label>
     <label xml:lang="hr-HR">Podaci o e-pošti</label>
     <label xml:lang="hu-HU">E-mail adatok</label>
@@ -15972,7 +15972,7 @@
       <label xml:lang="fi-FI">Sähköpostin tyyppi</label>
       <label xml:lang="fr-CA">Type de courriel</label>
       <label xml:lang="fr-FR">Type d’e-mail</label>
-      <label xml:lang="he-IL">סוג דוא&quot;ל</label>
+      <label xml:lang="he-IL">סוג דוא"ל</label>
       <label xml:lang="hi-IN">ईमेल प्रकार</label>
       <label xml:lang="hr-HR">Vrsta e-pošte</label>
       <label xml:lang="hu-HU">E-mail típusa</label>
@@ -16014,7 +16014,7 @@
       <label xml:lang="fi-FI">Sähköpostiosoite</label>
       <label xml:lang="fr-CA">Adresse de courriel</label>
       <label xml:lang="fr-FR">E-mail</label>
-      <label xml:lang="he-IL">כתובת דוא&quot;ל</label>
+      <label xml:lang="he-IL">כתובת דוא"ל</label>
       <label xml:lang="hi-IN">ईमेल पता</label>
       <label xml:lang="hr-HR">Adresa e-pošte</label>
       <label xml:lang="hu-HU">E-mail cím</label>
@@ -16547,7 +16547,7 @@
       <label xml:lang="es-MX">Nombre en caracteres alternativos 1</label>
       <label xml:lang="fi-FI">Nimi - vaihtoehtoinen merkistö 1</label>
       <label xml:lang="fr-CA">Nom en caractères alternatifs 1</label>
-      <label xml:lang="fr-FR">Nom en caractères alternatifs 1</label>
+      <label xml:lang="fr-FR">Nom en caractères alternatifs&#160;1</label>
       <label xml:lang="he-IL">שם בתו חלופי 1</label>
       <label xml:lang="hi-IN">वैकल्पिक वर्ण 1 में नाम</label>
       <label xml:lang="hr-HR">Ime u alternativnom znaku 1</label>
@@ -16588,7 +16588,7 @@
       <label xml:lang="es-MX">Nombre en caracteres alternativos 2</label>
       <label xml:lang="fi-FI">Nimi - vaihtoehtoinen merkistö 2</label>
       <label xml:lang="fr-CA">Nom en caractères alternatifs 2</label>
-      <label xml:lang="fr-FR">Nom en caractères alternatifs 2</label>
+      <label xml:lang="fr-FR">Nom en caractères alternatifs&#160;2</label>
       <label xml:lang="he-IL">שם בתו חלופי 2</label>
       <label xml:lang="hi-IN">वैकल्पिक वर्ण 2 में नाम</label>
       <label xml:lang="hr-HR">Ime u alternativnom znaku 2</label>
@@ -16671,7 +16671,7 @@
       <label xml:lang="fi-FI">Sähköposti</label>
       <label xml:lang="fr-CA">Courriel</label>
       <label xml:lang="fr-FR">E-mail</label>
-      <label xml:lang="he-IL">דוא&quot;ל</label>
+      <label xml:lang="he-IL">דוא"ל</label>
       <label xml:lang="hi-IN">ईमेल</label>
       <label xml:lang="hr-HR">e-pošta</label>
       <label xml:lang="hu-HU">E-mail</label>
@@ -16752,7 +16752,7 @@
       <label xml:lang="es-MX">Cadena personalizada de contacto de emergencia 1</label>
       <label xml:lang="fi-FI">Yhteydenotto hätätilanteessa - mukautettu merkkijono 1</label>
       <label xml:lang="fr-CA">Pers. à contacter en cas d’urgence Chaîne personnalisée 1</label>
-      <label xml:lang="fr-FR">Contact en cas d’urgence - Chaîne personnalisée 1</label>
+      <label xml:lang="fr-FR">Contact en cas d’urgence - Chaîne personnalisée&#160;1</label>
       <label xml:lang="he-IL">איש קשר לחירום מחרוזת מותאמת אישית 1</label>
       <label xml:lang="hi-IN">आपातकालीन संपर्क कस्टम स्ट्रिंग 1</label>
       <label xml:lang="hr-HR">Kontakt u slučaju nužde prilagođeni niz 1</label>
@@ -19747,7 +19747,7 @@
         <label xml:lang="es-MX">Cadena personalizada 1</label>
         <label xml:lang="fi-FI">Mukautettu merkkijono 1</label>
         <label xml:lang="fr-CA">Chaîne personnalisée 1</label>
-        <label xml:lang="fr-FR">Chaîne personnalisée 1</label>
+        <label xml:lang="fr-FR">Chaîne personnalisée&#160;1</label>
         <label xml:lang="he-IL">מחרוזת מותאמת אישית 1</label>
         <label xml:lang="hi-IN">कस्टम स्ट्रिंग 1</label>
         <label xml:lang="hr-HR">Prilagođeni niz 1</label>
@@ -21358,7 +21358,7 @@
         <label xml:lang="fi-FI">Työaikataulu</label>
         <label xml:lang="fr-CA">Plan de roulement</label>
         <label xml:lang="fr-FR">Horaires de travail</label>
-        <label xml:lang="he-IL">לו&quot;ז עבודה</label>
+        <label xml:lang="he-IL">לו"ז עבודה</label>
         <label xml:lang="hi-IN">कार्य शेड्यूल</label>
         <label xml:lang="hr-HR">Radni raspored</label>
         <label xml:lang="hu-HU">Munkarend</label>
@@ -23894,7 +23894,7 @@
       <description xml:lang="es-MX">Tendencia de potencial: Las fechas de inicio y fin deberían coincidir con el correspondiente período de Revisión del desempeño.</description>
       <description xml:lang="fi-FI">Potentiaalitrendi - alku-ja loppupäivämäärien on vastattava suorituksen arviointijaksoa.</description>
       <description xml:lang="fr-CA">Tendance du potentiel - Les dates de début et de fin doivent correspondre à la période d'évaluation de la performance.</description>
-      <description xml:lang="fr-FR">Évolution du potentiel : les dates de début et de fin doivent correspondre à la période d'évaluation des performances associée.</description>
+      <description xml:lang="fr-FR">Évolution du potentiel&#160;: les dates de début et de fin doivent correspondre à la période d'évaluation des performances associée.</description>
       <description xml:lang="he-IL">מגמת פוטנציאל - תאריך התחלה וסיום חייבים להתאים לתקופה המתאימה של סקירת ביצועים.</description>
       <description xml:lang="hi-IN">क्षमता रुझान - प्रारंभ और समाप्ति दिनांक संगत प्रदर्शिन समीक्षा अवधि से मेल खानी चाहिए.</description>
       <description xml:lang="hr-HR">Trend potencijala – datumi početka i završetka moraju biti usklađeni s odgovarajućim razdobljem ocjene radnog učinka.</description>
@@ -23960,7 +23960,7 @@
       <label xml:lang="vi-VN">Mục tiêu tổng thể **</label>
       <label xml:lang="zh-CN">目标总分 **</label>
       <label xml:lang="zh-TW">整體目標 **</label>
-      <description></description>
+      <description/>
       <background-element-ref refid="sysOverallObjective"/>
     </edit-template>
     <edit-template id="sysOverallCompetency">
@@ -24003,7 +24003,7 @@
       <label xml:lang="vi-VN">Năng lực tổng thể **</label>
       <label xml:lang="zh-CN">能力素质总分 **</label>
       <label xml:lang="zh-TW">整體職能 **</label>
-      <description></description>
+      <description/>
       <background-element-ref refid="sysOverallCompetency"/>
     </edit-template>
     <edit-template id="insideWorkExperience">
@@ -24871,7 +24871,7 @@
       <description xml:lang="es-MX">¿Cuáles son sus objetivos profesionales? ¿Qué desea hacer en esta empresa? ¿Hay algún puesto que desee ocupar en el futuro? Indíquelos debajo.</description>
       <description xml:lang="fi-FI">Minkälaisia uratavoitteita sinulla on? Mitä haluaisit tehdä tässä yrityksessä? Kiinnostaako sinua jokin erityinen tehtävä tulevaisuudessa? Kerro tavoitteistasi.</description>
       <description xml:lang="fr-CA">Quels sont vos objectifs professionnels? Que souhaitez-vous accomplir au sein de cette entreprise? Y-t-il des postes que vous souhaiteriez occuper à l'avenir? Indiquez-les ci-dessous.</description>
-      <description xml:lang="fr-FR">Quels sont vos objectifs de carrière ? Que souhaitez-vous faire dans cette entreprise ? Souhaitez-vous occuper certains postes à l'avenir ? Indiquez-les ci-dessous.</description>
+      <description xml:lang="fr-FR">Quels sont vos objectifs de carrière&#160;? Que souhaitez-vous faire dans cette entreprise&#160;? Souhaitez-vous occuper certains postes à l'avenir&#160;? Indiquez-les ci-dessous.</description>
       <description xml:lang="he-IL">מהם יעדי הקריירה שלך? מה ברצונך לעשות בחברה זו?  האם יש תפקידים שתרצה למלא בעתיד? הזן אותן להלן.</description>
       <description xml:lang="hi-IN">आपके करियर के लक्ष्य क्या हैं? आप इस कंपनी में क्या करना चाहते हैं? क्या यहां कोई ऐसा पद है जिस पर आप भविष्य में कार्य करना चाहते हों? कृपया उन्हें नीचे दर्ज करें.</description>
       <description xml:lang="hr-HR">Koji su vam ciljevi karijere? Što želite raditi u ovoj tvrtci? Želite li raditi na nekim određenim radnim mjestima u budućnosti? Molimo, unesite ih niže.</description>
@@ -27711,82 +27711,83 @@
   </view-template>
   <hris-sync-mappings>
     <hris-element-ref refid="phoneInfo">
-      <hris-mapping entity-type="H" >
+      <hris-mapping entity-type="H">
         <hris-field-ref refid="custom-long2"/>
         <standard-element-ref refid="custom02"/>
       </hris-mapping>
-      <hris-mapping entity-type="F" >
+      <hris-mapping entity-type="F">
         <hris-field-ref refid="custom-long3"/>
         <standard-element-ref refid="custom03"/>
       </hris-mapping>
-      <hris-mapping entity-type="B" >
+      <hris-mapping entity-type="B">
         <hris-field-ref refid="custom-string1"/>
         <standard-element-ref refid="custom04"/>
       </hris-mapping>
-      <hris-mapping entity-type="B1" >
+      <hris-mapping entity-type="B1">
         <hris-field-ref refid="custom-string2"/>
         <standard-element-ref refid="custom05"/>
       </hris-mapping>
-      <hris-mapping entity-type="C" >
+      <hris-mapping entity-type="C">
         <hris-field-ref refid="custom-string3"/>
         <standard-element-ref refid="custom06"/>
       </hris-mapping>
-      <hris-mapping entity-type="Business" >
+      <hris-mapping entity-type="Business">
         <hris-field-ref refid="phone-number"/>
         <standard-element-ref refid="custom14"/>
       </hris-mapping>
     </hris-element-ref>
     <hris-element-ref refid="emailInfo">
-      <hris-mapping entity-type="P" >
+      <hris-mapping entity-type="P">
         <hris-field-ref refid="email-address"/>
         <standard-element-ref refid="custom12"/>
       </hris-mapping>
-      <hris-mapping entity-type="B2" >
+      <hris-mapping entity-type="B2">
         <hris-field-ref refid="email-address"/>
         <standard-element-ref refid="custom15"/>
       </hris-mapping>
     </hris-element-ref>
     <hris-element-ref refid="jobInfo">
-      <hris-mapping >
+      <hris-mapping>
         <hris-field-ref refid="company"/>
         <standard-element-ref refid="custom05"/>
       </hris-mapping>
-      <hris-mapping >
+      <hris-mapping>
         <hris-field-ref refid="company"/>
         <user-info-record-key>user-company</user-info-record-key>
       </hris-mapping>
-      <hris-mapping >
+      <hris-mapping>
         <hris-field-ref refid="employee-class"/>
         <userinfo-element-ref refid="employeeClass"/>
       </hris-mapping>
     </hris-element-ref>
     <hris-element-ref refid="homeAddress">
-      <hris-mapping entity-type="home" >
+      <hris-mapping entity-type="home">
         <hris-field-ref refid="address1"/>
         <standard-element-ref refid="addressLine1"/>
       </hris-mapping>
-      <hris-mapping entity-type="home" >
+      <hris-mapping entity-type="home">
         <hris-field-ref refid="address2"/>
         <standard-element-ref refid="addressLine2"/>
       </hris-mapping>
-      <hris-mapping entity-type="home" >
+      <hris-mapping entity-type="home">
         <hris-field-ref refid="address3"/>
         <standard-element-ref refid="addressLine3"/>
       </hris-mapping>
-      <hris-mapping entity-type="home" >
+      <hris-mapping entity-type="home">
         <hris-field-ref refid="city"/>
         <standard-element-ref refid="city"/>
       </hris-mapping>
-      <hris-mapping entity-type="home" >
+      <hris-mapping entity-type="home">
         <hris-field-ref refid="state"/>
         <standard-element-ref refid="state"/>
       </hris-mapping>
     </hris-element-ref>
     <hris-element-ref refid="personInfo">
-      <hris-mapping >
+      <hris-mapping>
         <hris-field-ref refid="date-of-birth" date-format="dd/MMM"/>
         <standard-element-ref refid="custom01"/>
       </hris-mapping>
     </hris-element-ref>
   </hris-sync-mappings>
 </succession-data-model>
+
