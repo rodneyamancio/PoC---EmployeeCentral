@@ -13304,7 +13304,7 @@
       <label xml:lang="zh-CN">出生姓名</label>
       <label xml:lang="zh-TW">出生姓名</label>
     </hris-field>
-    <hris-field id="date-of-death" visibility="none">
+    <hris-field id="date-of-death" visibility="both">
       <label>Date of Death</label>
       <label xml:lang="ar-SA">تاريخ الوفاة</label>
       <label xml:lang="bg-BG">Дата на раждане</label>
@@ -13386,6 +13386,8 @@
     <label xml:lang="vi-VN">Thông tin cá nhân</label>
     <label xml:lang="zh-CN">个人信息</label>
     <label xml:lang="zh-TW">個人資訊</label>
+    <trigger-rule event="onSave" rule="PERS_ONSAVE"/>
+    <trigger-rule event="onInit" rule="PERS_ONINIT"/>
     <hris-field max-length="128" id="first-name" visibility="both" required="true">
       <label>First Name</label>
       <label xml:lang="ar-SA">الاسم الأول</label>
@@ -14537,6 +14539,7 @@
       <label xml:lang="vi-VN">Tình trạng hôn nhân</label>
       <label xml:lang="zh-CN">婚姻状况</label>
       <label xml:lang="zh-TW">婚姻狀況</label>
+      <trigger-rule event="onChange" rule="ONCHN_MARITAL_STATUS"/>
       <picklist id="ecMaritalStatus"/>
     </hris-field>
     <hris-field max-length="128" id="since" visibility="none">
@@ -14869,7 +14872,7 @@
       <label xml:lang="zh-CN">死亡日期</label>
       <label xml:lang="zh-TW">死亡日期</label>
     </hris-field>
-    <hris-field max-length="1" id="challenge-status" visibility="none">
+    <hris-field max-length="1" id="challenge-status" visibility="both">
       <label>Challenge Status</label>
       <label xml:lang="ar-SA">حالة الإعاقة</label>
       <label xml:lang="bg-BG">Статус на инвалидност</label>
@@ -18684,7 +18687,7 @@
     <label xml:lang="nb-NO">Jobbinformasjon</label>
     <label xml:lang="nl-NL">Functie-informatie</label>
     <label xml:lang="pl-PL">Informacje o posadzie</label>
-    <label xml:lang="pt-BR">Informações do cargo</label>
+    <label xml:lang="pt-BR">Posição ocupada</label>
     <label xml:lang="pt-PT">Informação de trabalho</label>
     <label xml:lang="ro-RO">Informaţii post</label>
     <label xml:lang="ru-RU">Информация о должности</label>
@@ -18697,7 +18700,6 @@
     <label xml:lang="vi-VN">Thông tin công việc</label>
     <label xml:lang="zh-CN">职务信息</label>
     <label xml:lang="zh-TW">職位資訊</label>
-    <label xml:lang="en-US">Job Information</label>
     <hris-section id="positionInfoList">
       <label>Position Information</label>
       <label xml:lang="ar-SA">معلومات المنصب</label>
@@ -18738,8 +18740,7 @@
       <label xml:lang="vi-VN">Thông tin chức vụ</label>
       <label xml:lang="zh-CN">职位信息</label>
       <label xml:lang="zh-TW">職位資訊</label>
-      <label xml:lang="en-US">Position Information</label>
-      <hris-field id="position" visibility="both">
+      <hris-field id="position" visibility="both" required="true">
         <label>Position</label>
         <label xml:lang="ar-SA">المنصب</label>
         <label xml:lang="bg-BG">Позиция</label>
@@ -18779,8 +18780,7 @@
         <label xml:lang="vi-VN">Chức vụ</label>
         <label xml:lang="zh-CN">职位</label>
         <label xml:lang="zh-TW">職位</label>
-        <label xml:lang="en-US">Position</label>
-        <trigger-rule event="onChange" rule="Pos2Job"/>
+        <trigger-rule event="onSave" rule="POSNTOJOB"/>
       </hris-field>
       <hris-field id="positionEntryDate" visibility="both">
         <label>Position Entry Date</label>
@@ -18822,9 +18822,8 @@
         <label xml:lang="vi-VN">Ngày nhập cảnh</label>
         <label xml:lang="zh-CN">就职日期</label>
         <label xml:lang="zh-TW">到職日期</label>
-        <label xml:lang="en-US">Position Entry Date</label>
       </hris-field>
-      <hris-field max-length="128" id="timeInPosition" visibility="none">
+      <hris-field max-length="128" id="timeInPosition" visibility="view">
         <label>Time In Position</label>
         <label xml:lang="ar-SA">المدة التي تم قضائها في المنصب</label>
         <label xml:lang="bg-BG">Час в позиция</label>
@@ -18864,7 +18863,6 @@
         <label xml:lang="vi-VN">Vị trí</label>
         <label xml:lang="zh-CN">在岗时间</label>
         <label xml:lang="zh-TW">任職時間</label>
-        <label xml:lang="en-US">Time In Position</label>
       </hris-field>
     </hris-section>
     <hris-section id="orgFieldsList">
@@ -18907,13 +18905,11 @@
       <label xml:lang="vi-VN">Thông tin tổ chức</label>
       <label xml:lang="zh-CN">组织信息</label>
       <label xml:lang="zh-TW">組織資訊</label>
-      <label xml:lang="en-US">Organization Information</label>
       <hris-field max-length="256" id="manager-id" visibility="both">
         <label>Leader</label>
-        <label xml:lang="es-MX">Gestor</label>
-        <label xml:lang="pt-BR">Gestor</label>
+        <label xml:lang="es-MX">Líder</label>
+        <label xml:lang="pt-BR">Líder</label>
         <label xml:lang="de-DE">de-DE</label>
-        <label xml:lang="en-US">Leader</label>
       </hris-field>
       <hris-field max-length="256" id="company" visibility="both" required="true">
         <label>Company</label>
@@ -18955,7 +18951,6 @@
         <label xml:lang="vi-VN">Công ty</label>
         <label xml:lang="zh-CN">公司</label>
         <label xml:lang="zh-TW">公司</label>
-        <label xml:lang="en-US">Company</label>
       </hris-field>
       <hris-field max-length="256" id="business-unit" visibility="both">
         <label>Business Unit</label>
@@ -18997,7 +18992,6 @@
         <label xml:lang="vi-VN">Đơn vị kinh doanh</label>
         <label xml:lang="zh-CN">业务单位</label>
         <label xml:lang="zh-TW">業務部門</label>
-        <label xml:lang="en-US">Business Unit</label>
       </hris-field>
       <hris-field max-length="128" id="division" visibility="both">
         <label>Division</label>
@@ -19039,7 +19033,6 @@
         <label xml:lang="vi-VN">Bộ phận</label>
         <label xml:lang="zh-CN">分部</label>
         <label xml:lang="zh-TW">事業部</label>
-        <label xml:lang="en-US">Division</label>
       </hris-field>
       <hris-field max-length="128" id="department" visibility="both">
         <label>Department</label>
@@ -19081,7 +19074,6 @@
         <label xml:lang="vi-VN">Phòng ban</label>
         <label xml:lang="zh-CN">部门</label>
         <label xml:lang="zh-TW">部門</label>
-        <label xml:lang="en-US">Department</label>
       </hris-field>
       <hris-field max-length="128" id="location" visibility="both">
         <label>Location</label>
@@ -19123,7 +19115,6 @@
         <label xml:lang="vi-VN">Địa điểm</label>
         <label xml:lang="zh-CN">地点</label>
         <label xml:lang="zh-TW">位置</label>
-        <label xml:lang="en-US">Location</label>
       </hris-field>
       <hris-field max-length="128" id="timezone" visibility="both">
         <label>Timezone</label>
@@ -19165,7 +19156,6 @@
         <label xml:lang="vi-VN">Múi giờ</label>
         <label xml:lang="zh-CN">时区</label>
         <label xml:lang="zh-TW">時區</label>
-        <label xml:lang="en-US">Timezone</label>
       </hris-field>
       <hris-field max-length="256" id="cost-center" visibility="both">
         <label>Cost Center</label>
@@ -19207,7 +19197,6 @@
         <label xml:lang="vi-VN">Trung tâm chi phí</label>
         <label xml:lang="zh-CN">成本中心</label>
         <label xml:lang="zh-TW">成本中心</label>
-        <label xml:lang="en-US">Cost Center</label>
       </hris-field>
     </hris-section>
     <hris-section id="jobFieldsList">
@@ -19250,7 +19239,47 @@
       <label xml:lang="vi-VN">Thông tin công việc</label>
       <label xml:lang="zh-CN">职务信息</label>
       <label xml:lang="zh-TW">職位資訊</label>
-      <label xml:lang="en-US">Job Information</label>
+      <!--<hris-field max-length="256" id="manager-id" visibility="both">
+        <label>Supervisor</label>
+        <label xml:lang="ar-SA">المشرف</label>
+        <label xml:lang="bg-BG">Ръководител</label>
+        <label xml:lang="bs-BS">Penyelia</label>
+        <label xml:lang="bs-ID">Supervisor</label>
+        <label xml:lang="cs-CZ">Vedoucí</label>
+        <label xml:lang="da-DK">Tilsynsførende</label>
+        <label xml:lang="de-CH">Vorgesetzter</label>
+        <label xml:lang="de-DE">Vorgesetzter</label>
+        <label xml:lang="el-GR">Επόπτης </label>
+        <label xml:lang="en-GB">Supervisor</label>
+        <label xml:lang="es-ES">Supervisor</label>
+        <label xml:lang="es-MX">Supervisor</label>
+        <label xml:lang="fi-FI">Esimies</label>
+        <label xml:lang="fr-CA">Superviseur</label>
+        <label xml:lang="fr-FR">Superviseur</label>
+        <label xml:lang="he-IL">מפקח</label>
+        <label xml:lang="hi-IN">पर्यवेक्षक</label>
+        <label xml:lang="hr-HR">Nadglednik</label>
+        <label xml:lang="hu-HU">Felettes</label>
+        <label xml:lang="it-IT">Supervisore</label>
+        <label xml:lang="ja-JP">監督者</label>
+        <label xml:lang="ko-KR">감독자</label>
+        <label xml:lang="nb-NO">Ansvarlig</label>
+        <label xml:lang="nl-NL">Supervisor</label>
+        <label xml:lang="pl-PL">Przełożony</label>
+        <label xml:lang="pt-BR">Supervisor</label>
+        <label xml:lang="pt-PT">Supervisor</label>
+        <label xml:lang="ro-RO">Supervizor</label>
+        <label xml:lang="ru-RU">Контролер</label>
+        <label xml:lang="sk-SK">Supervízor</label>
+        <label xml:lang="sl-SI">Nadzornik</label>
+        <label xml:lang="sr-RS">Nadzornik</label>
+        <label xml:lang="sv-SE">Supervisor</label>
+        <label xml:lang="th-TH">หัวหน้างาน</label>
+        <label xml:lang="tr-TR">Amir</label>
+        <label xml:lang="vi-VN">Giám sát viên</label>
+        <label xml:lang="zh-CN">主管</label>
+        <label xml:lang="zh-TW">主管</label>
+      </hris-field>-->
       <hris-field max-length="128" id="job-code" visibility="both" required="true">
         <label>Job Classification</label>
         <label xml:lang="ar-SA">تصنيف الوظيفة</label>
@@ -19291,7 +19320,6 @@
         <label xml:lang="vi-VN">Phân loại công việc</label>
         <label xml:lang="zh-CN">职务分类</label>
         <label xml:lang="zh-TW">職位分類</label>
-        <label xml:lang="en-US">Job Classification</label>
       </hris-field>
       <hris-field max-length="256" id="job-title" visibility="none">
         <label>Job Title</label>
@@ -19333,7 +19361,6 @@
         <label xml:lang="vi-VN">Tiêu đề công việc</label>
         <label xml:lang="zh-CN">职衔</label>
         <label xml:lang="zh-TW">職稱</label>
-        <label xml:lang="en-US">Job Title</label>
       </hris-field>
       <hris-field max-length="256" id="local-job-title" visibility="none">
         <label>Local Job Title</label>
@@ -19375,7 +19402,6 @@
         <label xml:lang="vi-VN">Tiêu đề công việc nội bộ</label>
         <label xml:lang="zh-CN">本地职衔</label>
         <label xml:lang="zh-TW">本地職稱</label>
-        <label xml:lang="en-US">Local Job Title</label>
       </hris-field>
       <hris-field max-length="256" id="pay-grade" visibility="both">
         <label>Pay Grade</label>
@@ -19417,9 +19443,8 @@
         <label xml:lang="vi-VN">Bậc lương</label>
         <label xml:lang="zh-CN">工资等级</label>
         <label xml:lang="zh-TW">薪資等級</label>
-        <label xml:lang="en-US">Pay Grade</label>
       </hris-field>
-      <hris-field max-length="32" id="regular-temp" visibility="none">
+      <hris-field max-length="32" id="regular-temp" visibility="both">
         <label>Regular/Temporary</label>
         <label xml:lang="ar-SA">منتظم/مؤقت</label>
         <label xml:lang="bg-BG">Редовно/Временно</label>
@@ -19459,10 +19484,9 @@
         <label xml:lang="vi-VN">Thường xuyên/Tạm thời</label>
         <label xml:lang="zh-CN">定期/临时</label>
         <label xml:lang="zh-TW">正規/臨時</label>
-        <label xml:lang="en-US">Regular/Temporary</label>
         <picklist id="regular-temp"/>
       </hris-field>
-      <hris-field max-length="256" id="standard-hours" visibility="none" maximumFractionDigits="2">
+      <hris-field max-length="256" id="standard-hours" visibility="both" maximumFractionDigits="2">
         <label>Standard Weekly Hours</label>
         <label xml:lang="ar-SA">الساعات الأسبوعية القياسية</label>
         <label xml:lang="bg-BG">Стандартни седмични часове</label>
@@ -19502,7 +19526,6 @@
         <label xml:lang="vi-VN">Giờ hàng tuần chuẩn</label>
         <label xml:lang="zh-CN">标准周时数</label>
         <label xml:lang="zh-TW">標準每週小時數</label>
-        <label xml:lang="en-US">Standard Weekly Hours</label>
       </hris-field>
       <hris-field max-length="256" id="workingDaysPerWeek" visibility="none">
         <label>Working Days Per Week</label>
@@ -19544,7 +19567,6 @@
         <label xml:lang="vi-VN">Ngày làm việc mỗi tuần</label>
         <label xml:lang="zh-CN">每周工作日</label>
         <label xml:lang="zh-TW">每週工作天數</label>
-        <label xml:lang="en-US">Working Days Per Week</label>
       </hris-field>
       <hris-field max-length="100" id="work-period" visibility="none">
         <label>Work Period</label>
@@ -19586,7 +19608,6 @@
         <label xml:lang="vi-VN">Thời gian làm việc</label>
         <label xml:lang="zh-CN">工作周期</label>
         <label xml:lang="zh-TW">工作週期</label>
-        <label xml:lang="en-US">Work Period</label>
       </hris-field>
       <hris-field max-length="256" id="fte" visibility="both" maximumFractionDigits="2">
         <label>FTE</label>
@@ -19628,9 +19649,8 @@
         <label xml:lang="vi-VN">FTE</label>
         <label xml:lang="zh-CN">等效全职员工数</label>
         <label xml:lang="zh-TW">FTE</label>
-        <label xml:lang="en-US">FTE</label>
       </hris-field>
-      <hris-field id="is-fulltime-employee" visibility="none">
+      <hris-field id="is-fulltime-employee" visibility="both">
         <label>Is Fulltime Employee</label>
         <label xml:lang="ar-SA">موظف متفرغ</label>
         <label xml:lang="bg-BG">Е служител на пълен работен ден</label>
@@ -19670,7 +19690,6 @@
         <label xml:lang="vi-VN">Là nhân viên toàn thời gian</label>
         <label xml:lang="zh-CN">是否是全职员工</label>
         <label xml:lang="zh-TW">是全職員工</label>
-        <label xml:lang="en-US">Is Fulltime Employee</label>
       </hris-field>
       <hris-field max-length="100" id="employee-type" visibility="none">
         <label>Employee Type</label>
@@ -19712,10 +19731,9 @@
         <label xml:lang="vi-VN">Loại nhân viên</label>
         <label xml:lang="zh-CN">员工类型</label>
         <label xml:lang="zh-TW">員工類型</label>
-        <label xml:lang="en-US">Employee Type</label>
         <picklist id="employee-type"/>
       </hris-field>
-      <hris-field max-length="256" id="custom-string1" visibility="none">
+      <hris-field max-length="256" id="custom-string1" visibility="both">
         <label>Periculosidade</label>
         <label xml:lang="ar-SA">سلسلة مخصصة 1</label>
         <label xml:lang="bg-BG">Клиентски стринг 1</label>
@@ -19755,7 +19773,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Periculosidade</label>
       </hris-field>
       <hris-field max-length="256" id="custom-string2" visibility="both">
         <label>Insalubridade</label>
@@ -19797,7 +19814,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Insalubridade</label>
       </hris-field>
       <hris-field max-length="256" id="custom-double1" visibility="both">
         <label>Porcentagem de insalubridade</label>
@@ -19839,7 +19855,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Porcentagem de insalubridade</label>
       </hris-field>
       <hris-field max-length="256" id="custom-string4" visibility="both">
         <label>Contribuição Sindical</label>
@@ -19881,7 +19896,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Contribuição Sindical</label>
       </hris-field>
       <hris-field max-length="256" id="custom-string5" visibility="both">
         <label>Chave recebedor CS</label>
@@ -19923,7 +19937,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Chave recebedor CS</label>
       </hris-field>
       <hris-field max-length="256" id="custom-string6" visibility="both">
         <label>Sindicato representante</label>
@@ -19965,7 +19978,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Sindicato representante</label>
       </hris-field>
       <hris-field max-length="256" id="custom-string7" visibility="both">
         <label>Chave recebedor sindicato</label>
@@ -20007,7 +20019,6 @@
         <label xml:lang="vi-VN">Chuỗi tùy chỉnh 1</label>
         <label xml:lang="zh-CN">自定义字符串 1</label>
         <label xml:lang="zh-TW">自訂字串 1</label>
-        <label xml:lang="en-US">Chave recebedor sindicato</label>
       </hris-field>
       <hris-field max-length="256" id="eeo-class" visibility="none">
         <label>EEO Class</label>
@@ -20049,7 +20060,6 @@
         <label xml:lang="vi-VN">Lớp EEO</label>
         <label xml:lang="zh-CN">EEO 类别</label>
         <label xml:lang="zh-TW">EEO 類別</label>
-        <label xml:lang="en-US">EEO Class</label>
         <picklist id="eeo-class"/>
       </hris-field>
       <hris-field max-length="128" id="change-reason" visibility="none">
@@ -20079,7 +20089,7 @@
         <label xml:lang="nb-NO">Hendelsesårsak</label>
         <label xml:lang="nl-NL">Gebeurtenisreden</label>
         <label xml:lang="pl-PL">Powód zdarzenia</label>
-        <label xml:lang="pt-BR">Motivo</label>
+        <label xml:lang="pt-BR">Motivo do evento</label>
         <label xml:lang="pt-PT">Razão para o evento</label>
         <label xml:lang="ro-RO">Motiv eveniment</label>
         <label xml:lang="ru-RU">Причина события</label>
@@ -20092,7 +20102,6 @@
         <label xml:lang="vi-VN">Lý do sự kiện</label>
         <label xml:lang="zh-CN">事件原因</label>
         <label xml:lang="zh-TW">事件理由</label>
-        <label xml:lang="en-US">Event Reason</label>
       </hris-field>
       <hris-field max-length="128" id="change-reason-external" visibility="none">
         <label>Event Reason External</label>
@@ -20134,7 +20143,6 @@
         <label xml:lang="vi-VN">Lý do sự kiện bên ngoài</label>
         <label xml:lang="zh-CN">外部事件原因</label>
         <label xml:lang="zh-TW">事件理由 (外部)</label>
-        <label xml:lang="en-US">Event Reason External</label>
       </hris-field>
       <hris-field max-length="128" id="radford-jobcode" visibility="none">
         <label>Radford JobCode</label>
@@ -20176,7 +20184,6 @@
         <label xml:lang="vi-VN">Mã công việc Radford</label>
         <label xml:lang="zh-CN">Radford 职务代码</label>
         <label xml:lang="zh-TW">Radford 職位代碼</label>
-        <label xml:lang="en-US">Radford JobCode</label>
       </hris-field>
       <hris-field max-length="4000" id="notes" visibility="none">
         <label>Notes</label>
@@ -20218,7 +20225,6 @@
         <label xml:lang="vi-VN">Ghi chú</label>
         <label xml:lang="zh-CN">注释</label>
         <label xml:lang="zh-TW">註釋</label>
-        <label xml:lang="en-US">Notes</label>
       </hris-field>
       <hris-field id="is-primary" visibility="none">
         <label>Is Primary</label>
@@ -20260,7 +20266,6 @@
         <label xml:lang="vi-VN">Ban đầu</label>
         <label xml:lang="zh-CN">是否是主要联系方式</label>
         <label xml:lang="zh-TW">是主要</label>
-        <label xml:lang="en-US">Is Primary</label>
       </hris-field>
       <hris-field max-length="32" id="track-id" visibility="none">
         <label>Track Id</label>
@@ -20302,7 +20307,6 @@
         <label xml:lang="vi-VN">Id theo dõi</label>
         <label xml:lang="zh-CN">跟踪标识符</label>
         <label xml:lang="zh-TW">追蹤識別碼</label>
-        <label xml:lang="en-US">Track Id</label>
       </hris-field>
       <hris-field max-length="256" id="employee-class" visibility="both">
         <label>Employee Class</label>
@@ -20344,7 +20348,6 @@
         <label xml:lang="vi-VN">Tầng lớp nhân viên</label>
         <label xml:lang="zh-CN">员工类别</label>
         <label xml:lang="zh-TW">員工級別</label>
-        <label xml:lang="en-US">Employee Class</label>
         <picklist id="EMPLOYEECLASS"/>
       </hris-field>
       <hris-field max-length="32" id="employment-type" visibility="none">
@@ -20387,7 +20390,7 @@
         <label xml:lang="vi-VN">Loại việc làm</label>
         <label xml:lang="zh-CN">雇佣类型</label>
         <label xml:lang="zh-TW">雇用類型</label>
-        <label xml:lang="en-US">Employment Type</label>
+        <picklist id="employmentType"/>
       </hris-field>
       <hris-field id="is-eligible-for-car" visibility="none">
         <label>Is Eligible For Car</label>
@@ -20429,7 +20432,6 @@
         <label xml:lang="vi-VN">Thích hợp cho xe</label>
         <label xml:lang="zh-CN">是否有资格获得汽车</label>
         <label xml:lang="zh-TW">具備使用汽車資格</label>
-        <label xml:lang="en-US">Is Eligible For Car</label>
       </hris-field>
       <hris-field id="is-eligible-for-benefit" visibility="none">
         <label>Is Eligible For Benefit</label>
@@ -20471,9 +20473,8 @@
         <label xml:lang="vi-VN">Thích hợp cho phúc lợi</label>
         <label xml:lang="zh-CN">是否有资格获得福利</label>
         <label xml:lang="zh-TW">具備享有福利資格</label>
-        <label xml:lang="en-US">Is Eligible For Benefit</label>
       </hris-field>
-      <hris-field id="is-shift-employee" visibility="none">
+      <hris-field id="is-shift-employee" visibility="both">
         <label>Is Shift Employee</label>
         <label xml:lang="ar-SA">موظف وردية</label>
         <label xml:lang="bg-BG">Е служител на смени</label>
@@ -20513,9 +20514,8 @@
         <label xml:lang="vi-VN">Nhân viên làm theo ca</label>
         <label xml:lang="zh-CN">是否是倒班员工</label>
         <label xml:lang="zh-TW">是輪班員工</label>
-        <label xml:lang="en-US">Is Shift Employee</label>
       </hris-field>
-      <hris-field max-length="256" id="shift-code" visibility="none">
+      <hris-field max-length="256" id="shift-code" visibility="both">
         <label>Shift Code</label>
         <label xml:lang="ar-SA">رمز الوردية</label>
         <label xml:lang="bg-BG">Код на смяна</label>
@@ -20555,7 +20555,6 @@
         <label xml:lang="vi-VN">Mã ca</label>
         <label xml:lang="zh-CN">班次代码</label>
         <label xml:lang="zh-TW">輪班代碼</label>
-        <label xml:lang="en-US">Shift Code</label>
       </hris-field>
       <hris-field max-length="256" id="shift-rate" visibility="none" maximumFractionDigits="2">
         <label>Shift Rate</label>
@@ -20597,7 +20596,6 @@
         <label xml:lang="vi-VN">Định mức ca</label>
         <label xml:lang="zh-CN">换班率</label>
         <label xml:lang="zh-TW">輪班工資率</label>
-        <label xml:lang="en-US">Shift Rate</label>
       </hris-field>
       <hris-field max-length="256" id="shift-factor" visibility="none" maximumFractionDigits="2">
         <label>Shift Percent</label>
@@ -20639,7 +20637,6 @@
         <label xml:lang="vi-VN">Tỷ lệ ca</label>
         <label xml:lang="zh-CN">班次比例</label>
         <label xml:lang="zh-TW">輪班百分比</label>
-        <label xml:lang="en-US">Shift Percent</label>
       </hris-field>
       <hris-field max-length="256" id="pay-group" visibility="none">
         <label>Pay Group</label>
@@ -20681,7 +20678,6 @@
         <label xml:lang="vi-VN">Nhóm trả lương</label>
         <label xml:lang="zh-CN">工资组</label>
         <label xml:lang="zh-TW">薪資組</label>
-        <label xml:lang="en-US">Pay Group</label>
       </hris-field>
       <hris-field max-length="256" id="international-org-code" visibility="none">
         <label>International Org Code</label>
@@ -20723,7 +20719,6 @@
         <label xml:lang="vi-VN">Mã tổ chức quốc tế</label>
         <label xml:lang="zh-CN">国际组织代码</label>
         <label xml:lang="zh-TW">國際組織代碼</label>
-        <label xml:lang="en-US">International Org Code</label>
       </hris-field>
       <hris-field max-length="256" id="manager-category" visibility="none">
         <label>Manager Category</label>
@@ -20765,7 +20760,6 @@
         <label xml:lang="vi-VN">Danh mục người quản lý</label>
         <label xml:lang="zh-CN">经理类别</label>
         <label xml:lang="zh-TW">管理者類別</label>
-        <label xml:lang="en-US">Manager Category</label>
       </hris-field>
       <hris-field id="is-eligible-for-financial-plan" visibility="none">
         <label>Is Eligible For Financial Plan</label>
@@ -20807,7 +20801,6 @@
         <label xml:lang="vi-VN">Thích hợp cho kế hoạch tài chính</label>
         <label xml:lang="zh-CN">是否有资格参与财务计划</label>
         <label xml:lang="zh-TW">具備財務計劃資格</label>
-        <label xml:lang="en-US">Is Eligible For Financial Plan</label>
       </hris-field>
       <hris-field max-length="256" id="amount-of-financial-plan" visibility="none">
         <label>Amount Of Financial Plan</label>
@@ -20849,7 +20842,6 @@
         <label xml:lang="vi-VN">Số tiền theo kế hoạch tài chính</label>
         <label xml:lang="zh-CN">财务计划金额</label>
         <label xml:lang="zh-TW">財務計劃金額</label>
-        <label xml:lang="en-US">Amount Of Financial Plan</label>
       </hris-field>
       <hris-field max-length="256" id="supervisor-level" visibility="none">
         <label>Supervisor Level</label>
@@ -20891,9 +20883,8 @@
         <label xml:lang="vi-VN">Mức giám sát</label>
         <label xml:lang="zh-CN">监管级</label>
         <label xml:lang="zh-TW">主管層級</label>
-        <label xml:lang="en-US">Supervisor Level</label>
       </hris-field>
-      <hris-field id="is-cross-border-worker" visibility="none">
+      <hris-field id="is-cross-border-worker" visibility="both">
         <label>Is Cross Border Worker</label>
         <label xml:lang="ar-SA">عامل عبر الحدود</label>
         <label xml:lang="bg-BG">Е трансграничен работник</label>
@@ -20933,7 +20924,6 @@
         <label xml:lang="vi-VN">Là công nhân xuyên biên giới</label>
         <label xml:lang="zh-CN">是否跨境工作</label>
         <label xml:lang="zh-TW">是跨境上班族</label>
-        <label xml:lang="en-US">Is Cross Border Worker</label>
       </hris-field>
       <hris-field max-length="256" id="ern-number" visibility="none">
         <label>Employee Record Number</label>
@@ -20975,7 +20965,6 @@
         <label xml:lang="vi-VN">Số hồ sơ nhân viên</label>
         <label xml:lang="zh-CN">员工记录编号</label>
         <label xml:lang="zh-TW">員工記錄號碼</label>
-        <label xml:lang="en-US">Employee Record Number</label>
       </hris-field>
       <hris-field id="company-leaving-for" visibility="none">
         <label>Company Leaving For</label>
@@ -21017,7 +21006,6 @@
         <label xml:lang="vi-VN">Thôi việc công ty vì</label>
         <label xml:lang="zh-CN">离职后加入的公司</label>
         <label xml:lang="zh-TW">離職後加入的新公司</label>
-        <label xml:lang="en-US">Company Leaving For</label>
       </hris-field>
       <hris-field max-length="384" id="manager" visibility="none">
         <label>Manager</label>
@@ -21059,7 +21047,6 @@
         <label xml:lang="vi-VN">Người quản lý</label>
         <label xml:lang="zh-CN">经理</label>
         <label xml:lang="zh-TW">經理</label>
-        <label xml:lang="en-US">Manager</label>
       </hris-field>
       <hris-field max-length="384" id="hr-manager" visibility="none">
         <label>HR Manager</label>
@@ -21101,7 +21088,6 @@
         <label xml:lang="vi-VN">Quản lý nguồn nhân lực</label>
         <label xml:lang="zh-CN">人力资源经理</label>
         <label xml:lang="zh-TW">人事部門經理</label>
-        <label xml:lang="en-US">HR Manager</label>
       </hris-field>
       <hris-field max-length="256" id="is-competition-clause-active" visibility="none">
         <label>Competition Clause</label>
@@ -21143,7 +21129,6 @@
         <label xml:lang="vi-VN">Điều khoản độc quyền</label>
         <label xml:lang="zh-CN">竞争条款</label>
         <label xml:lang="zh-TW">競爭條款</label>
-        <label xml:lang="en-US">Competition Clause</label>
       </hris-field>
       <hris-field max-length="256" id="is-side-line-job-allowed" visibility="none">
         <label>Sideline Job Allowed</label>
@@ -21185,9 +21170,8 @@
         <label xml:lang="vi-VN">Công việc bán thời gian được cho phép</label>
         <label xml:lang="zh-CN">允许兼职</label>
         <label xml:lang="zh-TW">允許兼職工作</label>
-        <label xml:lang="en-US">Sideline Job Allowed</label>
       </hris-field>
-      <hris-field max-length="256" id="probation-period-end-date" visibility="none">
+      <hris-field max-length="256" id="probation-period-end-date" visibility="both">
         <label>Probationary Period End Date</label>
         <label xml:lang="ar-SA">تاريخ انتهاء فترة التجربة</label>
         <label xml:lang="bg-BG">Крайна дата на изпитателен срок</label>
@@ -21227,7 +21211,6 @@
         <label xml:lang="vi-VN">Ngày kết thúc thời gian tập sự</label>
         <label xml:lang="zh-CN">试用期的结束日期</label>
         <label xml:lang="zh-TW">試用期結束日期</label>
-        <label xml:lang="en-US">Probationary Period End Date</label>
       </hris-field>
       <hris-field max-length="256" id="country-of-company" visibility="view">
         <label>Country</label>
@@ -21269,7 +21252,6 @@
         <label xml:lang="vi-VN">Quốc gia</label>
         <label xml:lang="zh-CN">国家</label>
         <label xml:lang="zh-TW">國家</label>
-        <label xml:lang="en-US">Country</label>
         <picklist id="ISOCountryList"/>
       </hris-field>
       <hris-field max-length="256" id="sick-pay-supplement" visibility="none">
@@ -21312,7 +21294,6 @@
         <label xml:lang="vi-VN">Thanh toán bổ sung do bệnh</label>
         <label xml:lang="zh-CN">病假工资增补</label>
         <label xml:lang="zh-TW">疾病給付補充</label>
-        <label xml:lang="en-US">Sick Pay Supplement</label>
         <picklist id="SICKPAYSUPP" parent-field-id="country-of-company"/>
       </hris-field>
       <hris-field id="jobEntryDate" visibility="both">
@@ -21355,7 +21336,6 @@
         <label xml:lang="vi-VN">Ngày nhập cảnh</label>
         <label xml:lang="zh-CN">入职日期</label>
         <label xml:lang="zh-TW">工作到職日期</label>
-        <label xml:lang="en-US">Job Entry Date</label>
       </hris-field>
       <hris-field max-length="256" id="timeInJob" visibility="none">
         <label>Time In Job</label>
@@ -21397,7 +21377,6 @@
         <label xml:lang="vi-VN">Công việc</label>
         <label xml:lang="zh-CN">工作年限</label>
         <label xml:lang="zh-TW">工作任職時間</label>
-        <label xml:lang="en-US">Time In Job</label>
       </hris-field>
       <hris-field max-length="10" id="payScaleGroup" visibility="none">
         <label>Pay Scale Group</label>
@@ -21439,7 +21418,6 @@
         <label xml:lang="vi-VN">Nhóm thang lương</label>
         <label xml:lang="zh-CN">工资等级组</label>
         <label xml:lang="zh-TW">薪級群組</label>
-        <label xml:lang="en-US">Pay Scale Group</label>
       </hris-field>
       <hris-field max-length="10" id="payScaleLevel" visibility="none">
         <label>Pay Scale Level</label>
@@ -21481,7 +21459,6 @@
         <label xml:lang="vi-VN">Cấp độ thang lương</label>
         <label xml:lang="zh-CN">工资等级级别</label>
         <label xml:lang="zh-TW">薪級等級</label>
-        <label xml:lang="en-US">Pay Scale Level</label>
       </hris-field>
       <hris-field id="attachment-id" visibility="none">
         <label>Attachment</label>
@@ -21523,15 +21500,12 @@
         <label xml:lang="vi-VN">Phần đính kèm</label>
         <label xml:lang="zh-CN">附件</label>
         <label xml:lang="zh-TW">附件</label>
-        <label xml:lang="en-US">Attachment</label>
       </hris-field>
       <hris-field max-length="256" id="notice-period-start-date" visibility="none">
         <label>Notice Period Start Date</label>
         <label xml:lang="de-DE">Beginn der Kündigungsfrist</label>
         <label xml:lang="en-GB">Notice Period Start Date</label>
         <label xml:lang="fr-FR">Date de début du délai de préavis</label>
-        <label xml:lang="pt-BR">Notice Period Start Date</label>
-        <label xml:lang="en-US">Notice Period Start Date</label>
       </hris-field>
     </hris-section>
     <hris-section id="timeOffRelatedFields">
@@ -21574,7 +21548,6 @@
       <label xml:lang="vi-VN">Thông tin thời gian</label>
       <label xml:lang="zh-CN">时间信息</label>
       <label xml:lang="zh-TW">工時資訊</label>
-      <label xml:lang="en-US">Time Information</label>
       <hris-field id="holiday-calendar-code" visibility="none">
         <label>Holiday Calendar</label>
         <label xml:lang="ar-SA">تقويم العطلات الرسمية</label>
@@ -21615,7 +21588,6 @@
         <label xml:lang="vi-VN">Lịch nghỉ lễ</label>
         <label xml:lang="zh-CN">假期日历</label>
         <label xml:lang="zh-TW">假日日曆</label>
-        <label xml:lang="en-US">Holiday Calendar</label>
       </hris-field>
       <hris-field id="workschedule-code" visibility="none">
         <label>Work Schedule</label>
@@ -21657,7 +21629,6 @@
         <label xml:lang="vi-VN">Lịch làm việc</label>
         <label xml:lang="zh-CN">工作计划</label>
         <label xml:lang="zh-TW">工作時間表</label>
-        <label xml:lang="en-US">Work Schedule</label>
       </hris-field>
       <hris-field id="time-type-profile-code" visibility="none">
         <label>Time Profile</label>
@@ -21699,7 +21670,6 @@
         <label xml:lang="vi-VN">Thông tin thời gian</label>
         <label xml:lang="zh-CN">时间表</label>
         <label xml:lang="zh-TW">時間簡檔</label>
-        <label xml:lang="en-US">Time Profile</label>
       </hris-field>
       <hris-field id="time-recording-profile-code" visibility="none">
         <label>Time Recording Profile</label>
@@ -21741,7 +21711,6 @@
         <label xml:lang="vi-VN">Hồ sơ chấm công</label>
         <label xml:lang="zh-CN">时间记录简档</label>
         <label xml:lang="zh-TW">工時記錄簡檔</label>
-        <label xml:lang="en-US">Time Recording Profile</label>
       </hris-field>
     </hris-section>
   </hris-element>
@@ -23264,7 +23233,6 @@
     <label xml:lang="vi-VN">Thông tin thanh toán</label>
     <label xml:lang="zh-CN">支付信息</label>
     <label xml:lang="zh-TW">付款資訊</label>
-    <label xml:lang="en-US">Payment Information</label>
     <hris-field max-length="20" id="payment-method" visibility="none">
       <label>Payment Method</label>
       <label xml:lang="ar-SA">أسلوب الدفع</label>
@@ -23292,7 +23260,7 @@
       <label xml:lang="nb-NO">Betalingsmåte</label>
       <label xml:lang="nl-NL">Betalingsmethode</label>
       <label xml:lang="pl-PL">Metoda płatności</label>
-      <label xml:lang="pt-BR">Dados bancários</label>
+      <label xml:lang="pt-BR">Dados bancários99999999999999</label>
       <label xml:lang="pt-PT">Forma de pagamento</label>
       <label xml:lang="ro-RO">Metodă de plată</label>
       <label xml:lang="ru-RU">Способ оплаты</label>
@@ -23305,7 +23273,6 @@
       <label xml:lang="vi-VN">Phương thức thanh toán</label>
       <label xml:lang="zh-CN">支付方式</label>
       <label xml:lang="zh-TW">付款方法</label>
-      <label xml:lang="en-US">Payment Method</label>
     </hris-field>
   </hris-element>
   <hris-element id="pensionPayoutsInfo">
@@ -28071,6 +28038,7 @@
     </hris-element-ref>
   </hris-sync-mappings>
 </succession-data-model>
+
 
 
 
