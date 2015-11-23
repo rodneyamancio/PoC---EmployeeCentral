@@ -1,6 +1,5 @@
 user-id,start-date,end-date,seq-number,pay-component,paycompvalue,currency-code,frequency,notes,operation
 ID do Usuário,Data do evento,Data final,Número da seqüência,Componente de pagamento,Montante,Moeda,Frequência,Anotações,Operação
-nsecches,15/01/2000,,,Base Salary,300000,BRL,MON,,
 pcunha,15/01/2000,,,Base Salary,300000,BRL,MON,,
 gantonio,15/01/2000,,,Base Salary,300000,BRL,MON,,
 aaragao,15/01/2000,,,Base Salary,300000,BRL,MON,,

@@ -1,6 +1,11 @@
-^picklistId,OptionId,minValue,maxValue,value,status,external_code,parentOptionId,en_US,pt_BR
- addressType,1674,-1.0,-1.0,-1.0,ACTIVE,  business  ,-1,,  Comercial   
- addressType,1675,-1.0,-1.0,-1.0,ACTIVE,  home  ,-1,,  Residencial   
- addressType,1778,-1.0,-1.0,-1.0,ACTIVE,  vacation  ,-1,,  Férias 
- addressType,1779,-1.0,-1.0,-1.0,OBSOLETED,  benefits  ,-1,,  Benefits   
- addressType,6346,-1.0,-1.0,-1.0,ACTIVE,  Mailing  ,-1,,  Correio
+^picklistId;OptionId;minValue;maxValue;value;status;external_code;parentOptionId;en_US;pt_BR;en_DEBUG
+addressType;3;-1.0;-1.0;-1.0;ACTIVE;business;-1;Business;Residência Permanente;
+addressType;4;-1.0;-1.0;-1.0;ACTIVE;home;-1;Home;Residência Secundária;
+addressType;5;-1.0;-1.0;-1.0;ACTIVE;3;-1;;Endereço no país de origem;
+addressType;6;-1.0;-1.0;-1.0;ACTIVE;4;-1;;Endereço contato em caso de emergência;
+addressType;7;-1.0;-1.0;-1.0;ACTIVE;5;-1;;Endereço para correspondência;
+addressType;8;-1.0;-1.0;-1.0;ACTIVE;6;-1;;Endereço de atualização;
+addressType;9;-1.0;-1.0;-1.0;ACTIVE;FPCB;-1;;Addresse pendant le congé bonifié;
+addressType;10;-1.0;-1.0;-1.0;ACTIVE;Q1;-1;;Authorised agent address;
+addressType;11;-1.0;-1.0;-1.0;ACTIVE;R1;-1;;Accomodation provided by employer;
+addressType;12;-1.0;-1.0;-1.0;ACTIVE;R2;-1;;Hotel accomodation provided by employer;
