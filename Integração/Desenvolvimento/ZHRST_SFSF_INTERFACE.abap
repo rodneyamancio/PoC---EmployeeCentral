@@ -33,12 +33,13 @@
   INFOTYPES:  0000,
               0001,
               0002,
+              0021,
               0022,
               0004,
               0006,
+              0008,
               0009,
               0105,
-              0008,
               0465,
               2001.
 
@@ -46,8 +47,11 @@
 *   Types                                                                *
 *  ----------------------------------------------------------------------*
   TYPES: BEGIN OF y_tabelas,
-          tabela_sf       TYPE string,
+          tabela_sf       TYPE zhrst_sfsf_param-tabela_sf,
           tabela_interna  TYPE string,
+          tipo_tabela     TYPE zhrst_sfsf_bkg-tipo_tabela,
+          tabela_original TYPE zhrst_sfsf_bkg-tabela_sf,
+          sequencia       TYPE zhrst_sfsf_bkg-sequencia,
          END OF y_tabelas,
 
          BEGIN OF y_treinamento,
@@ -135,6 +139,9 @@
               p_user    RADIOBUTTON GROUP g1.
   PARAMETERS: p_rec     AS CHECKBOX,
               p_transf  AS CHECKBOX DEFAULT 'X'.
+
+  SELECT-OPTIONS: s_tabela FOR w_tabelas-tabela_sf.
+
   SELECTION-SCREEN END OF BLOCK b1.
 
 *  ----------------------------------------------------------------------*
@@ -225,11 +232,10 @@
     SELECT *
       INTO TABLE t_parametros
       FROM zhrst_sfsf_param
-     WHERE begda LE sy-datum
-       AND endda GE sy-datum
-       AND infty NE space
-*      AND ( tabela_sf EQ 'PERNATIONALID'
-*      OR tabela_sf EQ 'USER' )
+     WHERE begda      LE sy-datum
+       AND endda      GE sy-datum
+       AND infty      NE space
+       AND tabela_sf  IN s_tabela
      ORDER BY tabela_sf seqnr campo_sf.
 
     IF sy-subrc NE 0.
@@ -296,13 +302,14 @@
     DATA: w_header_param    LIKE LINE OF t_parametros,
           w_parametro       LIKE LINE OF t_parametros.
 
-    DATA: l_nome_objeto(40) TYPE c,
-          l_nome_infty      TYPE infty,
-          l_empresa         TYPE char10,
-          l_operacao        TYPE char10,
-          l_id              TYPE char20,
-          l_infty           TYPE string,
-          l_tabix_tabela_sf TYPE sy-tabix.
+    DATA: l_nome_objeto(40)   TYPE c,
+          l_nome_infty        TYPE infty,
+          l_empresa           TYPE char10,
+          l_operacao          TYPE char10,
+          l_id                TYPE char20,
+          l_infty             TYPE string,
+          l_tabix_tabela_sf   TYPE sy-tabix,
+          l_tabix_tabela_sap  TYPE sy-tabix.
 
     FIELD-SYMBOLS: <f_tabela_sf>    TYPE table,
                    <f_tabela_sap>   TYPE table,
@@ -310,7 +317,8 @@
                    <f_workarea_sf>  TYPE ANY,
                    <f_campo_sf>     TYPE ANY,
                    <f_campo_sap>    TYPE ANY,
-                   <f_infty>        TYPE ANY.
+                   <f_infty>        TYPE ANY,
+                   <f_subty_sap>    TYPE ANY.
 
     PERFORM zf_define_empresa CHANGING l_empresa.
 
@@ -340,6 +348,7 @@
       LOOP AT <f_tabela_sap> ASSIGNING <f_workarea_sap>.
 
         CLEAR l_operacao.
+        l_tabix_tabela_sap = sy-tabix.
 
 *  /    Associa dinamicamente a estrutura da tabela para enviar ao SuccessFactors
         CLEAR w_tabelas.
@@ -357,8 +366,14 @@
 *  /
 
         LOOP AT t_parametros INTO w_parametro WHERE tabela_sf EQ w_header_param-tabela_sf AND
-                                                    empresa   EQ l_empresa AND
+                                                    empresa   EQ l_empresa                AND
                                                     seqnr     EQ w_header_param-seqnr.
+
+          ASSIGN COMPONENT 'SUBTY'OF STRUCTURE <f_workarea_sap> TO <f_subty_sap>.
+          IF <f_subty_sap> NE w_parametro-subty AND w_header_param-tabela_sf NE 'USER'.
+            l_operacao = 'S'.
+            CONTINUE.
+          ENDIF.
 
           UNASSIGN: <f_campo_sf>, <f_campo_sap>, <f_infty>.
           CLEAR: l_infty.
@@ -373,7 +388,7 @@
             IF sy-subrc NE 0. PERFORM zf_log USING pernr-pernr c_error 'Erro ao Associar Infotipo '(007) l_infty. ENDIF.
 
             IF <f_infty> IS ASSIGNED.
-              PERFORM zf_reg_infty USING w_parametro <f_workarea_sap> w_header_param-historico CHANGING <f_infty>.
+              PERFORM zf_reg_infty USING w_parametro <f_workarea_sap> w_tabelas-tipo_tabela CHANGING <f_infty>.
               IF <f_infty> IS INITIAL. PERFORM zf_log USING pernr-pernr c_error 'Erro ao Associar Infotipo '(007) l_infty. ENDIF.
 
               ASSIGN COMPONENT w_parametro-campo_sap OF STRUCTURE <f_infty> TO <f_campo_sap>.
@@ -428,7 +443,7 @@
         ENDLOOP.
 
 *  /    Verifica para as tabelas Backgrounds qual operação deve ser feita, INSERT ou UPDATE
-        IF NOT w_header_param-historico IS INITIAL AND <f_workarea_sf> IS ASSIGNED.
+        IF w_tabelas-tipo_tabela EQ '1' AND <f_workarea_sf> IS ASSIGNED.
           IF p_rec EQ c_abap_true.
             l_operacao = 'I'.
           ELSE.
@@ -465,12 +480,18 @@
 
             DELETE <f_tabela_sf> INDEX l_tabix_tabela_sf.
 
+          ELSE.
+
+            IF w_header_param-tabela_sf EQ 'PEREMERGENCYCONTACTS'.
+              DELETE <f_tabela_sap> INDEX l_tabix_tabela_sap.
+            ENDIF.
+
           ENDIF.
 
         ENDIF.
 
 *  /    Se não for uma tabela de histórico (Background) então registra apenas o primeiro registro
-        IF w_header_param-historico IS INITIAL.
+        IF w_tabelas-tipo_tabela EQ '0'.
           EXIT.
         ENDIF.
 *  /
@@ -660,6 +681,8 @@
     FIELD-SYMBOLS: <f_field>    TYPE ANY,
                    <f_w_user>   TYPE ANY,
                    <f_empresa>  TYPE ANY.
+
+    CHECK <f_t_user> IS ASSIGNED.
 
     LOOP AT t_credenciais INTO w_credenciais.
 
@@ -1157,7 +1180,8 @@
           w_comp            LIKE LINE OF t_comp,
           t_table           TYPE REF TO data,
           l_table           TYPE string,
-          l_count(2)        TYPE n.
+          l_count(2)        TYPE n,
+          w_sfsf_bkg        TYPE zhrst_sfsf_bkg.
 
     FIELD-SYMBOLS: <f_table> TYPE table.
 
@@ -1169,7 +1193,13 @@
 
       CLEAR: l_o_new_type,
              l_o_new_tab,
-             t_comp.
+             t_comp,
+             w_sfsf_bkg.
+
+      SELECT SINGLE *
+        INTO w_sfsf_bkg
+        FROM zhrst_sfsf_bkg
+       WHERE alias_sf EQ w_param_loc-tabela_sf.
 
       w_comp-name = 'EMPRESA'.
       w_comp-type = cl_abap_elemdescr=>get_string( ).
@@ -1216,6 +1246,9 @@
         ASSIGN t_table->* TO <f_t_user>.
         w_tabelas-tabela_sf       = w_param_loc-tabela_sf.
         w_tabelas-tabela_interna  = '<F_T_USER>'.
+        w_tabelas-tipo_tabela     = w_sfsf_bkg-tipo_tabela.
+        w_tabelas-tabela_original = w_sfsf_bkg-tabela_sf.
+        w_tabelas-sequencia       = w_sfsf_bkg-sequencia.
         APPEND w_tabelas TO t_tabelas.
 
       ELSE.
@@ -1249,6 +1282,9 @@
         CONCATENATE '<F_T_' l_count '>' INTO l_table.
         w_tabelas-tabela_sf       = w_param_loc-tabela_sf.
         w_tabelas-tabela_interna  = l_table.
+        w_tabelas-tipo_tabela     = w_sfsf_bkg-tipo_tabela.
+        w_tabelas-tabela_original = w_sfsf_bkg-tabela_sf.
+        w_tabelas-sequencia       = w_sfsf_bkg-sequencia.
         APPEND w_tabelas TO t_tabelas.
 
       ENDIF.
@@ -1309,7 +1345,7 @@
 
     ASSIGN COMPONENT 'BEGDA' OF STRUCTURE p_workarea_sap TO <f_begda_ref>.
 
-    IF p_hist IS INITIAL.
+    IF p_hist EQ '0'.
       <f_begda_ref> = sy-datum.
     ENDIF.
 
@@ -2325,6 +2361,7 @@
                    <f_seqnr>    TYPE ANY.
 
     DELETE t_tabelas WHERE tabela_sf EQ 'USER'.
+    SORT t_tabelas BY sequencia.
 
     LOOP AT t_credenciais INTO w_credenciais.
 
@@ -2341,10 +2378,7 @@
           ASSIGN COMPONENT 'SEQNR' OF STRUCTURE <f_w_ec> TO <f_seqnr>.
 
           CLEAR l_tabela_sf.
-          SELECT SINGLE tabela_sf
-            INTO l_tabela_sf
-            FROM zhrst_sfsf_bkg
-           WHERE alias_sf EQ w_tabelas-tabela_sf.
+          l_tabela_sf = w_tabelas-tabela_original.
 
           LOOP AT t_parametros INTO w_parametro WHERE empresa   EQ w_credenciais-empresa
                                                   AND tabela_sf EQ w_tabelas-tabela_sf
@@ -2391,19 +2425,21 @@
 
         ENDLOOP.
 
-      ENDLOOP.
 *  /
 
-      IF NOT t_sfobject[] IS INITIAL.
+        IF NOT t_sfobject[] IS INITIAL.
 *  / Efetua a operação INSERT com o XML criado no item anterior
-        PERFORM zf_mensagem_progresso USING 'Efetuando UPSERT na Tabela-' l_tabela_sf.
-        PERFORM zf_call_upsert USING l_tabela_sf
-                                     w_credenciais
-                                     t_sfobject.
-      ENDIF.
+          PERFORM zf_mensagem_progresso USING 'Efetuando UPSERT na Tabela-' l_tabela_sf.
+          PERFORM zf_call_upsert USING l_tabela_sf
+                                       w_credenciais
+                                       t_sfobject.
+
+          CLEAR: t_sfobject[],
+                 t_request_data[].
+        ENDIF.
 * /
 
-      CLEAR t_sfobject[].
+      ENDLOOP.
 
     ENDLOOP.
 
