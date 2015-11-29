@@ -41,6 +41,8 @@
               0009,
               0105,
               0465,
+              0398,
+              0016,
               2001.
 
 *  ----------------------------------------------------------------------*
@@ -1340,10 +1342,12 @@
 
     FIELD-SYMBOLS: <f_t_infty>     TYPE table,
                    <f_w_infty>     TYPE ANY,
-                   <f_begda_ref>   TYPE ANY.
+                   <f_begda_ref>   TYPE ANY,
+                   <f_endda_ref>   TYPE ANY.
     CLEAR: p_infty.
 
     ASSIGN COMPONENT 'BEGDA' OF STRUCTURE p_workarea_sap TO <f_begda_ref>.
+    ASSIGN COMPONENT 'ENDDA' OF STRUCTURE p_workarea_sap TO <f_endda_ref>.
 
     IF p_hist EQ '0'.
       <f_begda_ref> = sy-datum.
@@ -1359,10 +1363,12 @@
 
       MOVE-CORRESPONDING <f_w_infty> TO w_pskey.
 
-      IF NOT <f_begda_ref> BETWEEN w_pskey-begda AND w_pskey-endda.
+*      IF NOT <f_begda_ref> BETWEEN w_pskey-begda AND w_pskey-endda.
+*        CONTINUE.
+*      ENDIF.
+      IF NOT <f_endda_ref> BETWEEN w_pskey-begda AND w_pskey-endda.
         CONTINUE.
       ENDIF.
-
       IF NOT p_parametro-subty IS INITIAL AND
          w_pskey-subty NE p_parametro-subty.
         CONTINUE.
