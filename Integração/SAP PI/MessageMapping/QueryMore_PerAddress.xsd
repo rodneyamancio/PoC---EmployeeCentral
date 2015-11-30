@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="urn:sfobject.sfapi.successfactors.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:sfobject.sfapi.successfactors.com">
+   <xsd:element name="queryMoreResponse">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="result" type="QueryResult" form="qualified"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="SFObject">
+      <xsd:sequence>
+         <xsd:choice minOccurs="0">
+            <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"/>
+            <xsd:element name="businessKeys" type="BusinessKeys" minOccurs="0" form="qualified"/>
+         </xsd:choice>
+         <xsd:element name="type" type="xsd:string" form="qualified"/>
+<xsd:element name="countryName" type="xsd:string" form="qualified"/>
+<xsd:element name="dataSnapshotDate" type="xsd:string" form="qualified"/>
+<xsd:element name="created_on" type="xsd:string" form="qualified"/>
+<xsd:element name="created_by" type="xsd:string" form="qualified"/>
+<xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+<xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+<xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+<xsd:element name="start_date" type="xsd:string" form="qualified"/>
+<xsd:element name="end_date" type="xsd:string" form="qualified"/>
+<xsd:element name="address1" type="xsd:string" form="qualified"/>
+<xsd:element name="address2" type="xsd:string" form="qualified"/>
+<xsd:element name="address3" type="xsd:string" form="qualified"/>
+<xsd:element name="city" type="xsd:string" form="qualified"/>
+<xsd:element name="county" type="xsd:string" form="qualified"/>
+<xsd:element name="state" type="xsd:string" form="qualified"/>
+<xsd:element name="province" type="xsd:string" form="qualified"/>
+<xsd:element name="script" type="xsd:string" form="qualified"/>
+<xsd:element name="zip_code" type="xsd:string" form="qualified"/>
+<xsd:element name="country" type="xsd:string" form="qualified"/>
+<xsd:element name="notes" type="xsd:string" form="qualified"/>
+<xsd:element name="address4" type="xsd:string" form="qualified"/>
+<xsd:element name="address5" type="xsd:string" form="qualified"/>
+<xsd:element name="address6" type="xsd:string" form="qualified"/>
+<xsd:element name="address20" type="xsd:string" form="qualified"/>
+<xsd:element name="address7" type="xsd:string" form="qualified"/>
+<xsd:element name="address8" type="xsd:string" form="qualified"/>
+<xsd:element name="address9" type="xsd:string" form="qualified"/>
+<xsd:element name="address10" type="xsd:string" form="qualified"/>
+<xsd:element name="address11" type="xsd:string" form="qualified"/>
+<xsd:element name="address12" type="xsd:string" form="qualified"/>
+<xsd:element name="address_type" type="xsd:string" form="qualified"/>
+<xsd:element name="operation" type="xsd:string" form="qualified"/>
+<xsd:element name="person_id" type="xsd:string" form="qualified"/>
+         <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="QueryResult">
+      <xsd:sequence>
+         <xsd:element name="sfobject" type="SFObject" minOccurs="0" maxOccurs="unbounded" form="qualified"/>
+         <xsd:element name="numResults" type="xsd:int" form="qualified"/>
+         <xsd:element name="hasMore" type="xsd:boolean" form="qualified"/>
+         <xsd:element name="querySessionId" type="xsd:string" form="qualified" nillable="true"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BusinessKeys">
+      <xsd:sequence>
+         <xsd:any processContents="lax" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

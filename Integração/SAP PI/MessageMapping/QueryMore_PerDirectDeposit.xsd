@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="urn:sfobject.sfapi.successfactors.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:sfobject.sfapi.successfactors.com">
+   <xsd:element name="queryMoreResponse">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="result" type="QueryResult" form="qualified"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+   <xsd:complexType name="SFObject">
+      <xsd:sequence>
+         <xsd:choice minOccurs="0">
+            <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"/>
+            <xsd:element name="businessKeys" type="BusinessKeys" minOccurs="0" form="qualified"/>
+         </xsd:choice>
+         <xsd:element name="type" type="xsd:string" form="qualified"/>
+<xsd:element name="created_on" type="xsd:string" form="qualified"/>
+<xsd:element name="created_by" type="xsd:string" form="qualified"/>
+<xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+<xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+<xsd:element name="id" type="xsd:string" form="qualified"/>
+<xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+<xsd:element name="custom_string2" type="xsd:string" form="qualified"/>
+<xsd:element name="custom_string4" type="xsd:string" form="qualified"/>
+<xsd:element name="routing_number" type="xsd:string" form="qualified"/>
+<xsd:element name="account_number" type="xsd:string" form="qualified"/>
+<xsd:element name="account_name" type="xsd:string" form="qualified"/>
+<xsd:element name="deposit_type" type="xsd:string" form="qualified"/>
+<xsd:element name="processing_order" type="xsd:string" form="qualified"/>
+<xsd:element name="process_type" type="xsd:string" form="qualified"/>
+<xsd:element name="country_code" type="xsd:string" form="qualified"/>
+<xsd:element name="currency_code" type="xsd:string" form="qualified"/>
+<xsd:element name="notes" type="xsd:string" form="qualified"/>
+<xsd:element name="bank_control_key" type="xsd:string" form="qualified"/>
+<xsd:element name="operation" type="xsd:string" form="qualified"/>
+<xsd:element name="person_id" type="xsd:string" form="qualified"/>
+         <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="QueryResult">
+      <xsd:sequence>
+         <xsd:element name="sfobject" type="SFObject" minOccurs="0" maxOccurs="unbounded" form="qualified"/>
+         <xsd:element name="numResults" type="xsd:int" form="qualified"/>
+         <xsd:element name="hasMore" type="xsd:boolean" form="qualified"/>
+         <xsd:element name="querySessionId" type="xsd:string" form="qualified" nillable="true"/>
+      </xsd:sequence>
+   </xsd:complexType>
+   <xsd:complexType name="BusinessKeys">
+      <xsd:sequence>
+         <xsd:any processContents="lax" maxOccurs="unbounded"/>
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>
