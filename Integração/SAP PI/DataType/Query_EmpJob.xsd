@@ -1,0 +1,113 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hrsolutions:successfactors:1.0" targetNamespace="urn:hrsolutions:successfactors:1.0">
+   <xsd:complexType name="queryEmpJob">
+      <xsd:sequence>
+         <xsd:element name="SFObject" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="id" type="xsd:string" />
+                  <xsd:element name="businesskey" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="type" type="xsd:string" />
+                  <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+                  <xsd:element name="dataSnapshotDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="user_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="start_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="end_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="employee_class" type="xsd:string" form="qualified"/>
+                  <xsd:element name="fte" type="xsd:string" form="qualified"/>
+                  <xsd:element name="position" type="xsd:string" form="qualified"/>
+                  <xsd:element name="positionEntryDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="seq_number" type="xsd:string" form="qualified"/>
+                  <xsd:element name="manager_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="expected_return_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="flsa_status" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eeo_class" type="xsd:string" form="qualified"/>
+                  <xsd:element name="payScaleArea" type="xsd:string" form="qualified"/>
+                  <xsd:element name="contract_type" type="xsd:string" form="qualified"/>
+                  <xsd:element name="is_competition_clause_active" type="xsd:string" form="qualified"/>
+                  <xsd:element name="is_side_line_job_allowed" type="xsd:string" form="qualified"/>
+                  <xsd:element name="probation_period_end_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="notice_period" type="xsd:string" form="qualified"/>
+                  <xsd:element name="initial_entry_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="corporation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eeo1_job_category" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eeo4_job_category" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eeo5_job_category" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eeo6_job_category" type="xsd:string" form="qualified"/>
+                  <xsd:element name="probationary_period" type="xsd:string" form="qualified"/>
+                  <xsd:element name="probationary_period_measure" type="xsd:string" form="qualified"/>
+                  <xsd:element name="work_location" type="xsd:string" form="qualified"/>
+                  <xsd:element name="labor_Protection" type="xsd:string" form="qualified"/>
+                  <xsd:element name="occupation_cri" type="xsd:string" form="qualified"/>
+                  <xsd:element name="new_calc_avg_ppu" type="xsd:string" form="qualified"/>
+                  <xsd:element name="new_calc_avg_dnp" type="xsd:string" form="qualified"/>
+                  <xsd:element name="code_of_job_for_eldp" type="xsd:string" form="qualified"/>
+                  <xsd:element name="sick_pay_supplement" type="xsd:string" form="qualified"/>
+                  <xsd:element name="assedic_cert_initial_state_num" type="xsd:string" form="qualified"/>
+                  <xsd:element name="assedic_cert_object_num" type="xsd:string" form="qualified"/>
+                  <xsd:element name="family_relationship_with_employer" type="xsd:string" form="qualified"/>
+                  <xsd:element name="contract_reference_for_aed" type="xsd:string" form="qualified"/>
+                  <xsd:element name="electoral_college_for_workers_representatives" type="xsd:string" form="qualified"/>
+                  <xsd:element name="electoral_college_for_works_council" type="xsd:string" form="qualified"/>
+                  <xsd:element name="excl_executive_sector" type="xsd:string" form="qualified"/>
+                  <xsd:element name="resident_vote" type="xsd:string" form="qualified"/>
+                  <xsd:element name="municipal_insee_code" type="xsd:string" form="qualified"/>
+                  <xsd:element name="calc_method_indicator" type="xsd:string" form="qualified"/>
+                  <xsd:element name="working_time_directive" type="xsd:string" form="qualified"/>
+                  <xsd:element name="wtd_hours_limit" type="xsd:string" form="qualified"/>
+                  <xsd:element name="tupe_org_number" type="xsd:string" form="qualified"/>
+                  <xsd:element name="pension_protection" type="xsd:string" form="qualified"/>
+                  <xsd:element name="teachers_pension" type="xsd:string" form="qualified"/>
+                  <xsd:element name="occupation_gtm" type="xsd:string" form="qualified"/>
+                  <xsd:element name="contract_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="contract_number" type="xsd:string" form="qualified"/>
+                  <xsd:element name="ineligible_statutory_min_wage" type="xsd:string" form="qualified"/>
+                  <xsd:element name="spcl_rule_non_manual_worker" type="xsd:string" form="qualified"/>
+                  <xsd:element name="payment_in_lieu_of_notice" type="xsd:string" form="qualified"/>
+                  <xsd:element name="guaranteed_payment" type="xsd:string" form="qualified"/>
+                  <xsd:element name="period_indicator" type="xsd:string" form="qualified"/>
+                  <xsd:element name="calculation_base" type="xsd:string" form="qualified"/>
+                  <xsd:element name="work_permit_expiry" type="xsd:string" form="qualified"/>
+                  <xsd:element name="credit_for_previous_service" type="xsd:string" form="qualified"/>
+                  <xsd:element name="assessment_status" type="xsd:string" form="qualified"/>
+                  <xsd:element name="current_wage_level" type="xsd:string" form="qualified"/>
+                  <xsd:element name="degree_of_productivity" type="xsd:string" form="qualified"/>
+                  <xsd:element name="local_job_title" type="xsd:string" form="qualified"/>
+                  <xsd:element name="occupation_per" type="xsd:string" form="qualified"/>
+                  <xsd:element name="job_group" type="xsd:string" form="qualified"/>
+                  <xsd:element name="from_currency" type="xsd:string" form="qualified"/>
+                  <xsd:element name="to_currency" type="xsd:string" form="qualified"/>
+                  <xsd:element name="exchange_rate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="valid_from" type="xsd:string" form="qualified"/>
+                  <xsd:element name="sick_pay_supplement_period" type="xsd:string" form="qualified"/>
+                  <xsd:element name="sick_pay_supplement_measure" type="xsd:string" form="qualified"/>
+                  <xsd:element name="dismissals_notice_period_for_employer" type="xsd:string" form="qualified"/>
+                  <xsd:element name="occupational_levels" type="xsd:string" form="qualified"/>
+                  <xsd:element name="operation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="legalEntityCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="legalEntityName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="businessUnitCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="businessUnitName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="costCenterCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="costCenterName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="divisionCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="divisionName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="payGradeCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="payGradeName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eventReasonCode" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eventReasonName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="emplStatus" type="xsd:string" form="qualified"/>
+                  <xsd:element name="event" type="xsd:string" form="qualified"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="numResults" type="xsd:integer" />
+         <xsd:element name="hasMore" type="xsd:boolean" />
+         <xsd:element name="querySessionId" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

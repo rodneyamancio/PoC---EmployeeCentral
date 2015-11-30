@@ -1,0 +1,36 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hrsolutions:successfactors:1.0" targetNamespace="urn:hrsolutions:successfactors:1.0">
+   <xsd:complexType name="queryPerNationalId">
+      <xsd:sequence>
+         <xsd:element name="SFObject" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="id" type="xsd:string" />
+                  <xsd:element name="businesskey" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="type" type="xsd:string" />
+                  <xsd:element name="countryName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string2" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string3" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_date1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="country" type="xsd:string" form="qualified"/>
+                  <xsd:element name="card_type" type="xsd:string" form="qualified"/>
+                  <xsd:element name="national_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="isPrimary" type="xsd:string" form="qualified"/>
+                  <xsd:element name="notes" type="xsd:string" form="qualified"/>
+                  <xsd:element name="operation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id" type="xsd:string" form="qualified"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="numResults" type="xsd:integer" />
+         <xsd:element name="hasMore" type="xsd:boolean" />
+         <xsd:element name="querySessionId" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

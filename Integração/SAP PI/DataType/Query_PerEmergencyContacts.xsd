@@ -1,0 +1,42 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hrsolutions:successfactors:1.0" targetNamespace="urn:hrsolutions:successfactors:1.0">
+   <xsd:complexType name="queryPerEmergencyContacts">
+      <xsd:sequence>
+         <xsd:element name="SFObject" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="id" type="xsd:string" />
+                  <xsd:element name="businesskey" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="type" type="xsd:string" />
+                  <xsd:element name="created_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string6" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string7" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string8" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string9" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string10" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_string14" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_date1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_date2" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_date3" type="xsd:string" form="qualified"/>
+                  <xsd:element name="custom_long1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="name" type="xsd:string" form="qualified"/>
+                  <xsd:element name="relationship" type="xsd:string" form="qualified"/>
+                  <xsd:element name="primary_flag" type="xsd:string" form="qualified"/>
+                  <xsd:element name="gender" type="xsd:string" form="qualified"/>
+                  <xsd:element name="email" type="xsd:string" form="qualified"/>
+                  <xsd:element name="operation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id" type="xsd:string" form="qualified"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="numResults" type="xsd:integer" />
+         <xsd:element name="hasMore" type="xsd:boolean" />
+         <xsd:element name="querySessionId" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

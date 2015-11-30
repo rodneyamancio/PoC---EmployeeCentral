@@ -1,0 +1,52 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hrsolutions:successfactors:1.0" targetNamespace="urn:hrsolutions:successfactors:1.0">
+   <xsd:complexType name="queryPerAddress">
+      <xsd:sequence>
+         <xsd:element name="SFObject" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="id" type="xsd:string" />
+                  <xsd:element name="businesskey" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="type" type="xsd:string" />
+                  <xsd:element name="countryName" type="xsd:string" form="qualified"/>
+                  <xsd:element name="dataSnapshotDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+                  <xsd:element name="start_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="end_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address1" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address2" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address3" type="xsd:string" form="qualified"/>
+                  <xsd:element name="city" type="xsd:string" form="qualified"/>
+                  <xsd:element name="county" type="xsd:string" form="qualified"/>
+                  <xsd:element name="state" type="xsd:string" form="qualified"/>
+                  <xsd:element name="province" type="xsd:string" form="qualified"/>
+                  <xsd:element name="script" type="xsd:string" form="qualified"/>
+                  <xsd:element name="zip_code" type="xsd:string" form="qualified"/>
+                  <xsd:element name="country" type="xsd:string" form="qualified"/>
+                  <xsd:element name="notes" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address4" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address5" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address6" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address20" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address7" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address8" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address9" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address10" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address11" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address12" type="xsd:string" form="qualified"/>
+                  <xsd:element name="address_type" type="xsd:string" form="qualified"/>
+                  <xsd:element name="operation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id" type="xsd:string" form="qualified"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="numResults" type="xsd:integer" />
+         <xsd:element name="hasMore" type="xsd:boolean" />
+         <xsd:element name="querySessionId" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>

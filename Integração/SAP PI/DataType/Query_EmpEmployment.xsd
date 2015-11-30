@@ -1,0 +1,38 @@
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hrsolutions:successfactors:1.0" targetNamespace="urn:hrsolutions:successfactors:1.0">
+   <xsd:complexType name="queryEmpEmployment">
+      <xsd:sequence>
+         <xsd:element name="SFObject" minOccurs="0" maxOccurs="unbounded">
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="id" type="xsd:string" />
+                  <xsd:element name="businesskey" type="xsd:string" minOccurs="0" />
+                  <xsd:element name="type" type="xsd:string" />
+                  <xsd:element name="created_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="created_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
+                  <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
+                  <xsd:element name="user_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
+                  <xsd:element name="start_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="originalStartDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="person_id" type="xsd:string" form="qualified"/>
+                  <xsd:element name="end_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="okToRehire" type="xsd:string" form="qualified"/>
+                  <xsd:element name="payrollEndDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="lastDateWorked" type="xsd:string" form="qualified"/>
+                  <xsd:element name="regretTermination" type="xsd:string" form="qualified"/>
+                  <xsd:element name="eligibleForSalContinuation" type="xsd:string" form="qualified"/>
+                  <xsd:element name="StockEndDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="salary_end_date" type="xsd:string" form="qualified"/>
+                  <xsd:element name="benefitsEndDate" type="xsd:string" form="qualified"/>
+                  <xsd:element name="bonusPayExpirationDate" type="xsd:string" form="qualified"/>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="numResults" type="xsd:integer" />
+         <xsd:element name="hasMore" type="xsd:boolean" />
+         <xsd:element name="querySessionId" type="xsd:string" />
+      </xsd:sequence>
+   </xsd:complexType>
+</xsd:schema>
