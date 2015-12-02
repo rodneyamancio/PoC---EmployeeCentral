@@ -18,7 +18,6 @@
 <xsd:element name="created_by" type="xsd:string" form="qualified"/>
 <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
 <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
-<xsd:element name="id" type="xsd:string" form="qualified"/>
 <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>
 <xsd:element name="custom_string2" type="xsd:string" form="qualified"/>
 <xsd:element name="custom_string4" type="xsd:string" form="qualified"/>
@@ -32,7 +31,6 @@
 <xsd:element name="currency_code" type="xsd:string" form="qualified"/>
 <xsd:element name="notes" type="xsd:string" form="qualified"/>
 <xsd:element name="bank_control_key" type="xsd:string" form="qualified"/>
-<xsd:element name="operation" type="xsd:string" form="qualified"/>
 <xsd:element name="person_id" type="xsd:string" form="qualified"/>
          <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
       </xsd:sequence>

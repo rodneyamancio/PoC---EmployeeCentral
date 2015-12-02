@@ -23,7 +23,6 @@
 <xsd:element name="email_type" type="xsd:string" form="qualified"/>
 <xsd:element name="email_address" type="xsd:string" form="qualified"/>
 <xsd:element name="isPrimary" type="xsd:string" form="qualified"/>
-<xsd:element name="operation" type="xsd:string" form="qualified"/>
 <xsd:element name="person_id" type="xsd:string" form="qualified"/>
          <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
       </xsd:sequence>

@@ -10,7 +10,6 @@
    <xsd:complexType name="SFObject">
       <xsd:sequence>
          <xsd:choice minOccurs="0">
-            <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"/>
             <xsd:element name="businessKeys" type="BusinessKeys" minOccurs="0" form="qualified"/>
          </xsd:choice>
          <xsd:element name="type" type="xsd:string" form="qualified"/>
@@ -93,7 +92,6 @@
 <xsd:element name="sick_pay_supplement_measure" type="xsd:string" form="qualified"/>
 <xsd:element name="dismissals_notice_period_for_employer" type="xsd:string" form="qualified"/>
 <xsd:element name="occupational_levels" type="xsd:string" form="qualified"/>
-<xsd:element name="operation" type="xsd:string" form="qualified"/>
 <xsd:element name="legalEntityCode" type="xsd:string" form="qualified"/>
 <xsd:element name="legalEntityName" type="xsd:string" form="qualified"/>
 <xsd:element name="businessUnitCode" type="xsd:string" form="qualified"/>

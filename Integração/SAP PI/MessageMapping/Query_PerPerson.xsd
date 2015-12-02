@@ -20,7 +20,6 @@
 <xsd:element name="last_modified_by" type="xsd:string" form="qualified"/>
 <xsd:element name="last_modified_on" type="xsd:string" form="qualified"/>
 <xsd:element name="id" type="xsd:string" form="qualified"/>
-<xsd:element name="user_id" type="xsd:string" form="qualified"/>
 <xsd:element name="date_of_birth" type="xsd:string" form="qualified"/>
 <xsd:element name="country_of_birth" type="xsd:string" form="qualified"/>
 <xsd:element name="person_id_external" type="xsd:string" form="qualified"/>

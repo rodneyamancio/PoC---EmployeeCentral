@@ -10,7 +10,6 @@
    <xsd:complexType name="SFObject">
       <xsd:sequence>
          <xsd:choice minOccurs="0">
-            <xsd:element name="id" type="xsd:string" minOccurs="0" form="qualified"/>
             <xsd:element name="businessKeys" type="BusinessKeys" minOccurs="0" form="qualified"/>
          </xsd:choice>
          <xsd:element name="type" type="xsd:string" form="qualified"/>
@@ -27,7 +26,6 @@
 <xsd:element name="paycompvalue" type="xsd:string" form="qualified"/>
 <xsd:element name="currency_code" type="xsd:string" form="qualified"/>
 <xsd:element name="notes" type="xsd:string" form="qualified"/>
-<xsd:element name="operation" type="xsd:string" form="qualified"/>
 <xsd:element name="payComponentCode" type="xsd:string" form="qualified"/>
 <xsd:element name="payComponentName" type="xsd:string" form="qualified"/>
 <xsd:element name="frequencyCode" type="xsd:string" form="qualified"/>

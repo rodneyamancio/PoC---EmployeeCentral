@@ -36,8 +36,6 @@
 <xsd:element name="primary_flag" type="xsd:string" form="qualified"/>
 <xsd:element name="gender" type="xsd:string" form="qualified"/>
 <xsd:element name="email" type="xsd:string" form="qualified"/>
-<xsd:element name="operation" type="xsd:string" form="qualified"/>
-<xsd:element name="person_id" type="xsd:string" form="qualified"/>
          <xsd:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
       </xsd:sequence>
    </xsd:complexType>
